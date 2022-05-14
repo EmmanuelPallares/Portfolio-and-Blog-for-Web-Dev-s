@@ -1,6 +1,9 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { NavBar } from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Template } from "../components/Template";
+import { LogoSVG, VitozSVG } from "../components/svg/index";
+
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.graphcms.com/v2/cl339o8uy4aru01z84ry54y9n/master"
 );
@@ -19,8 +22,8 @@ const PORTFOLIO = gql`
     }
   }
 `;
-export async function getStaticProps() {
-  let { portfolios } = await graphcms.request(PORTFOLIO);
+export async function getStaticProps(props) {
+  const { portfolios } = await graphcms.request(PORTFOLIO);
 
   return {
     props: {
@@ -31,9 +34,9 @@ export async function getStaticProps() {
 
 export default function Index() {
   return (
-    <div class="bg-indigo-700">
-      <NavBar />
-      <h1>Hola mundo</h1>
+    <div>
+      <NavBar props={LogoSVG} />
+
       <Footer />
     </div>
   );
