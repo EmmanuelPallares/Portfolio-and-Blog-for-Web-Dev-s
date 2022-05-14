@@ -1,5 +1,5 @@
 //Install the dependencies first of colors npm i tailwind-colors
-const colors = require("tailwindcss/colors");
+var colors = require("tailwindcss/colors");
 module.exports = {
   theme: {
     extend: {
@@ -14,8 +14,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
   ],
   theme: [],
-  plugins: [require("flowbite/plugin")],
+  plugins: [],
 };

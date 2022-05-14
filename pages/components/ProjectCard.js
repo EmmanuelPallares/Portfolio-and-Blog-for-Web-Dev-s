@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import "flowbite";
+
 export const ProjectCard = ({ portfolios }) => {
   console.log(portfolios);
   return (
