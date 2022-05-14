@@ -8,3 +8,6 @@ https://dev.to/dolearning/importing-svgs-to-next-js-nna
 
 ##Color Palette from wizeline
 https://www.wizeline.com/brand/
+
+##Good Practiques Next js
+https://stackoverflow.com/questions/65738950/understanding-imports-from-component-pages-in-nextjs

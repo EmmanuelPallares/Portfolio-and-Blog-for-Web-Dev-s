@@ -84,19 +84,7 @@ export const Footer = () => {
                     <span>YouTube</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="flex items-center space-x-3 hover:text-sky-400 transition"
-                  >
-                    <Image
-                      className="w-5 h-5"
-                      src="https://c5.patreon.com/external/favicon/favicon.ico?v=69kMELnXkB"
-                      alt="patreon icon"
-                    />
-                    <span>LinkedIn</span>
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href="#"
@@ -141,3 +129,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer;
