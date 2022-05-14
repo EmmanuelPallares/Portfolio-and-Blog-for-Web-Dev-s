@@ -11,7 +11,6 @@ export const getStaticProps = async () => {
   };
 };
 export const Projects = (portfolios) => {
-  console.log(portfolios);
   return (
     <>
       <ProjectCard />;

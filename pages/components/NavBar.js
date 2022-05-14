@@ -2,8 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import newlogo from "../../assets/newlogo.svg";
+import { getNavigationProps } from "../../lib/data";
 
-export const NavBar = () => {
+export const getNavItems = async () => {
+  const NAVITEMS = await getNavigationProps(NAVIGATIONQUERYS);
+  return {
+    props: NAVITEMS,
+  };
+};
+
+export const NavBar = (NAVITEMS) => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {

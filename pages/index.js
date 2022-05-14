@@ -10,7 +10,6 @@ export const getStaticProps = async () => {
   };
 };
 export default function Index(portfolios) {
-  console.log(portfolios);
   return (
     <>
       <div> Hello World! Home Page</div>
