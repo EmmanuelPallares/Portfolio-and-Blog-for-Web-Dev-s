@@ -21,8 +21,8 @@ const PORTFOLIO = gql`
     }
   }
 `;
-export async function getStaticProps(props) {
-  const { portfolios } = await graphcms.request(PORTFOLIO);
+export async function getStaticProps() {
+  const portfolios = await graphcms.request(PORTFOLIO);
 
   return {
     props: {
@@ -31,7 +31,8 @@ export async function getStaticProps(props) {
   };
 }
 
-export default function Index() {
+export default function Index(portfolios) {
+  console.log(portfolios);
   return (
     <div>
       <NavBar />
