@@ -35,7 +35,7 @@ export async function getStaticProps(props) {
 export default function Index() {
   return (
     <div>
-      <NavBar props={LogoSVG} />
+      <NavBar />
 
       <Footer />
     </div>
