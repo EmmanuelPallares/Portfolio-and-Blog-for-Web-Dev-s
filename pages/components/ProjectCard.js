@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PORTFOLIO } from "../../lib/data";
 
 export const ProjectCard = ({ portfolios }) => {
   console.log(portfolios);

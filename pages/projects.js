@@ -1,9 +1,22 @@
-import Image from "next/image";
-import Link from "next/link";
 import ProjectCard from "../pages/components/ProjectCard";
-export const Projects = ({ portfolios }) => {
+import { getPortfolioProps } from "../lib/data";
+
+export const getStaticProps = async () => {
+  const portfolios = await getPortfolioProps();
+
+  return {
+    props: {
+      portfolios,
+    },
+  };
+};
+export const Projects = (portfolios) => {
   console.log(portfolios);
-  return <ProjectCard />;
+  return (
+    <>
+      <ProjectCard />;
+    </>
+  );
 };
 
 export default ProjectCard;
