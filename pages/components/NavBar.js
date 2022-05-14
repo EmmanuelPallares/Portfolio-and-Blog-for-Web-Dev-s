@@ -74,9 +74,6 @@ export const NavBar = () => {
             </Link>
           </div>
         </div>
-
-        <p className="text-redred">Hola </p>
-        <p className="bg-Primary-Red">Hola </p>
       </nav>
     </>
   );

@@ -15,19 +15,15 @@ export const Footer = () => {
 
                 <li>
                   <a href="/about" className="hover:text-sky-400 transition">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="/projects" className="hover:text-sky-400 transition">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="/blog" className="hover:text-sky-400 transition">
+                  <a href="/projects" className="hover:text-sky-400 transition">
                     Blog
                   </a>
                 </li>
+
                 <li>
                   <a href="/random" className="hover:text-sky-400 transition">
                     Random

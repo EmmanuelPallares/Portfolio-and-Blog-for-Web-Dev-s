@@ -1,6 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
+import ProjectCard from "./components/ProjectCard";
 // import { Footer } from "./pages/components/Footer";
 
 const graphcms = new GraphQLClient(
@@ -31,8 +32,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Index(portfolios) {
-  console.log(portfolios);
+export default function Index({ portfolios }) {
   return (
     <div>
       <NavBar />

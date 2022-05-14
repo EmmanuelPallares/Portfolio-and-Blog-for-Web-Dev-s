@@ -11,3 +11,5 @@ https://www.wizeline.com/brand/
 
 ##Good Practiques Next js
 https://stackoverflow.com/questions/65738950/understanding-imports-from-component-pages-in-nextjs
+
+#Its important for SSR install react and react-dom 17 and changes the components folder into a pages
