@@ -1,4 +1,5 @@
-export default function Footer() {
+import Image from "next/image";
+export const Footer = () => {
   return (
     <div className="prose relative py-20 flex flex-col items-center bg-cyan-900 overflow-hidden md:py-12">
       <div className="relative z-[1] container m-auto px-6 md:px-12">
@@ -88,7 +89,7 @@ export default function Footer() {
                     href="#"
                     className="flex items-center space-x-3 hover:text-sky-400 transition"
                   >
-                    <img
+                    <Image
                       className="w-5 h-5"
                       src="https://c5.patreon.com/external/favicon/favicon.ico?v=69kMELnXkB"
                       alt="patreon icon"
@@ -139,4 +140,4 @@ export default function Footer() {
       ></div>
     </div>
   );
-}
+};
