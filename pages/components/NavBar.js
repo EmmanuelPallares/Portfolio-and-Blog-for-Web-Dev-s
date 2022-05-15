@@ -5,7 +5,7 @@ import newlogo from "../../assets/newlogo.svg";
 import { getNavigationProps } from "../../lib/data";
 
 export const getNavItems = async () => {
-  const NAVITEMS = await getNavigationProps(NAVIGATIONQUERYS);
+  const NAVITEMS = await getNavigationProps(NAVIGATIONQUERY);
   return {
     props: NAVITEMS,
   };
@@ -17,6 +17,7 @@ export const NavBar = (NAVITEMS) => {
   const handleClick = () => {
     setActive(!active);
   };
+  console.log(NAVITEMS);
 
   return (
     <>

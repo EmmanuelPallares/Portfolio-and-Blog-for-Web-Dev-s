@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import ProjectCard from "../pages/components/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 export const Projects = () => {
   return (
     <>

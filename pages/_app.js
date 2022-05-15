@@ -1,9 +1,8 @@
 import "../styles/globals.css";
 
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
 import Head from "next/head";
 
+import Layout from "./components/Layout";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -13,9 +12,10 @@ function MyApp({ Component, pageProps }) {
           href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"
         />
       </Head>
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+
       {/* The body tag doest appear in nextjs by default */}
       <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     </>

@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { getPortfolioProps } from "../../lib/data";
-
-export const ProjectCard = () => {
+export const ProjectCard = (DATA) => {
+  console.log(DATA);
   return (
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       {/* <Image
