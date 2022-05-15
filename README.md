@@ -28,6 +28,7 @@ https://graphcms.com/blog/essential-content-models-for-modern-websites
 https://exerror.com/autoprefixer-replace-color-adjust-to-print-color-adjust-the-color-adjust-shorthand-is-currently-deprecated/
 https://stackoverflow.com/questions/71236842/error-while-using-flowbite-with-nextjs-and-typescript
 https://smnh.me/add-class-to-body-tag-in-nextjs
+https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot
 
 Credits
 https://flowbite.com/
