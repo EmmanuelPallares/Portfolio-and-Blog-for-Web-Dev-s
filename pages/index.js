@@ -9,10 +9,13 @@ export const getStaticProps = async () => {
     },
   };
 };
+
 export default function Index(portfolios) {
   return (
     <>
-      <div> Hello World! Home Page</div>
+      <div className="max-w-3xl mx-auto px-4 mb-12 text-6xl text-red-500">
+        Home
+      </div>
     </>
   );
 }

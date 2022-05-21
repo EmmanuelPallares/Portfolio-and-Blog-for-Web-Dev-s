@@ -1,7 +1,6 @@
 export const ProjectCard = (DATA) => {
-  console.log(DATA);
   return (
-    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="mt-6 mb-6  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       {/* <Image
         src="https://i.imgur.com/b3uHPlM.pngaTxOe"
         alt="from imgur library"

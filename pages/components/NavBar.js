@@ -17,11 +17,10 @@ export const NavBar = (NAVITEMS) => {
   const handleClick = () => {
     setActive(!active);
   };
-  console.log(NAVITEMS);
 
   return (
     <>
-      <nav className="bg-redred flex items-center flex-wrap p-3">
+      <nav className="flex items-center flex-wrap p-3">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <Image
@@ -30,13 +29,13 @@ export const NavBar = (NAVITEMS) => {
               className="bg-transparent"
             />
 
-            <span className="text-xl text-Primary-Red font-bold  tracking-wide">
+            <div className="px-3 py-2 rounded text-xl hover:bg-[#111823] hover:text-white font-bold  tracking-wide">
               vitoz.dev
-            </span>
+            </div>
           </a>
         </Link>
         <button
-          className="inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-black ml-auto hover:text-white outline-none"
+          className="inline-flex p-3 hover:bg-[#111823] rounded lg:hidden text-black ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <svg
@@ -62,23 +61,23 @@ export const NavBar = (NAVITEMS) => {
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-green-600 hover:text-white ">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-[#111823] hover:text-white">
                 Home
               </a>
             </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-                Services
+            <Link href="/projects">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-[#111823] hover:text-white">
+                Projects
               </a>
             </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-                About us
+            <Link href="/blog">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-[#111823] hover:text-white">
+                Blog
               </a>
             </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blackd font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-                Contact us
+            <Link href="/about">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blackd font-bold items-center justify-center hover:bg-[#111823] hover:text-white">
+                About
               </a>
             </Link>
           </div>
