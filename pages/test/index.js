@@ -13,9 +13,7 @@ export default function Test(portfolios) {
   console.log(ARRAYPORTFOLIO);
   return (
     <>
-      <div></div>
-
-      <>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
         {ARRAYPORTFOLIO.map(({ title, description, slug, imagePortfolio }) => (
           <div>
             <div className="mt-6 mb-6  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -174,7 +172,7 @@ priority={true}
             </div>
           </div>
         ))}
-      </>
+      </div>
     </>
   );
 }
