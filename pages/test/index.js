@@ -1,4 +1,3 @@
-import ProjectCard from "../components/ProjectCard";
 import { getPortfolioProps } from "../../lib/data";
 export const getStaticProps = async () => {
   const portfolios = await getPortfolioProps();
