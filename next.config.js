@@ -1,5 +1,10 @@
 module.exports = {
   images: {
-    domains: ["i.imgur.com", "media.graphassets.com", "amazonaws.com"],
+    domains: [
+      "i.imgur.com",
+      "media.graphassets.com",
+      "amazonaws.com",
+      "tuk.dev",
+    ],
   },
 };

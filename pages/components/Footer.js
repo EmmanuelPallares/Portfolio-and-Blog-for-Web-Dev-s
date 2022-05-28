@@ -98,7 +98,7 @@ export const Footer = () => {
       >
         <div
           aria-hidden="true"
-          className="bg-layers bg-scale w-56 h-56 m-auto blur-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full md:w-[30rem] md:h-[30rem] md:blur-3xl"
+          className="bg-layers bg-scale w-56 h-56 m-auto blur-xl bg-gradient-to-r from-[#00A7E5] via-blue-500 to-purple-600 rounded-full md:w-[30rem] md:h-[30rem] md:blur-3xl"
         ></div>
       </div>
       <div
