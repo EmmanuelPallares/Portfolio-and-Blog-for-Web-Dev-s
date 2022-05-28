@@ -8,7 +8,8 @@ export const getStaticProps = async () => {
 };
 export default function ProjectCard(portfolios) {
   const ARRAYPORTFOLIO = portfolios.props;
-  console.log(ARRAYPORTFOLIO);
+  
+
   return (
     <div className="mt-6 mb-6  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       {/* <Image
