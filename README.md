@@ -35,3 +35,11 @@ https://flowbite.com/
 https://imgur.com/
 https://pixabay.com/
 https://blog.sethcorker.com/question/how-to-solve-referenceerror-next-js-window-is-not-defined/
+
+Tutorials
+https://www.youtube.com/watch?v=qDJpkB1N8kg
+https://www.dawsoncodes.com/posts/2/syntax-highlighting-with-prism-and-nextjs
+
+Linux commands sheet
+wsl from powershell for change terminal
+and then write /mnt/c for change the current directory
