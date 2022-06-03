@@ -1,17 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { getBlogProps } from "../../../lib/data";
-export const getStaticPropsComponent = async () => {
-  const blogs = await getBlogProps();
 
-  return {
-    props: blogs,
-  };
-};
-
-export default function BlogSection(blogs) {
-  console.log(blogs);
-
+export default function BlogSection() {
   return (
     <>
       <section className="py-20">

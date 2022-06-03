@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
 
 export default function Test(portfolios) {
   const ARRAYPORTFOLIO = portfolios.props.portfolios;
-  console.log(ARRAYPORTFOLIO);
+
   return (
     <>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
@@ -122,7 +122,7 @@ priority={true}
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           cliprulestrokelinejoin="round"
                           strokewidth="2"
                           d="M15 19l-7-7 7-7"
@@ -145,7 +145,7 @@ priority={true}
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           cliprulestrokelinejoin="round"
                           strokewidth="2"
                           d="M9 5l7 7-7 7"
@@ -177,7 +177,7 @@ priority={true}
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                         clipRule="evenodd"
                       ></path>

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Head>

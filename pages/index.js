@@ -12,7 +12,7 @@ export default function Index() {
   );
 }
 export async function get() {
-  console.log(props);
+  
   const client = GraphQLClient;
 
   const { page } = await client.request(getPageProps, {
