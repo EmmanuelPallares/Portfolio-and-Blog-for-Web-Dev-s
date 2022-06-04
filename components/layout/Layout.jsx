@@ -1,12 +1,12 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import BackToTop from "../elements/BackToTop";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
+import newlogo from "../../assets/newlogo.svg";
 
 const Layout = ({ children }) => {
-  console.log(children);
   const [hiddenClass, setHiddenClass] = useState("hidden");
 
   const handleHidden = () => setHiddenClass("");

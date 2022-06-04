@@ -1,6 +1,8 @@
 import "../styles/globals.css";
-import Head from "next/head";
-import Layout from "./components/Layout";
+import "../styles/animate.min.css";
+import "../styles/tailwind-built.css";
+import "../styles/slick.css";
+import Layout from "./../components/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
