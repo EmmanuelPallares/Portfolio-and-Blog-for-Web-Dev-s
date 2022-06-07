@@ -1,7 +1,7 @@
 import SwiperCore, { Navigation } from "swiper";
+import { getBlogProps } from "../../lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import { getBlogProps } from "../../lib/data";
 export const getStaticProps = async () => {
   const blogsIndex = await getBlogProps();
 
@@ -13,7 +13,6 @@ export const getStaticProps = async () => {
 SwiperCore.use([Navigation]);
 
 export default function Slider1(blogsIndex) {
-  console.log(blogsIndex);
   return (
     <>
       {/* {blogs.map(({ blog, title, excerpt, coverImage }) => (
