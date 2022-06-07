@@ -6,6 +6,9 @@ https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-ne
 Svg into next js
 https://dev.to/dolearning/importing-svgs-to-next-js-nna
 
+Tailwind v2 for monst template
+https://v2.tailwindcss.com/docs
+
 ##Color Palette
 from wizeline
 https://www.wizeline.com/brand/
