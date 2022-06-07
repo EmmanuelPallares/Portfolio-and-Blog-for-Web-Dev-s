@@ -382,8 +382,8 @@ export default function Index() {
                   className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
                 >
-                  Simple Solution for{" "}
-                  <span className="text-blue-500">Complex</span> Connections
+                  Check my latest projects
+                  <span className="text-blue-500">Custom</span> Solutions
                 </h2>
                 <p
                   className="text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
@@ -410,6 +410,7 @@ export default function Index() {
     </>
   );
 }
+
 export async function get() {
   const client = GraphQLClient;
 

@@ -1,81 +1,62 @@
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
+import { getBlogProps } from "../../lib/data";
+export const getStaticProps = async () => {
+  const blogsIndex = await getBlogProps();
+
+  return {
+    props: blogsIndex,
+  };
+};
 
 SwiperCore.use([Navigation]);
 
-const Slider1 = () => {
+export default function Slider1(blogsIndex) {
+  console.log(blogsIndex);
   return (
     <>
-      <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        loop={true}
-        navigation={{
-          prevEl: ".custom_prev",
-          nextEl: ".custom_next",
-        }}
-        className="custom-class"
-      >
-        <SwiperSlide>
-          <div className="px-3 pb-5">
-            <div className="card-slider group">
-              <img
-                className="rounded-xl"
-                src="/assets/imgs/placeholders/img-2.jpg"
-                alt="Monst"
-              />
-              <div className="flex justify-between items-end">
-                <div>
-                  <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
+      {/* {blogs.map(({ blog, title, excerpt, coverImage }) => (
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={30}
+          loop={true}
+          navigation={{
+            prevEl: ".custom_prev",
+            nextEl: ".custom_next",
+          }}
+          className="custom-class"
+        >
+          <SwiperSlide>
+            <div className="px-3 pb-5">
+              <div className="card-slider group">
+                <Image
+                  className="rounded-xl"
+                  src={coverImage.url}
+                  alt="Monst"
+                />
+                <div className="flex justify-between items-end">
+                  <div>
+                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
+                      <Link href="/services">
+                        <a>{title}</a>
+                      </Link>
+                    </h1>
+                    <p className="mt-2 text-xs text-gray-500">{excerpt}</p>
+                  </div>
+                  <div>
                     <Link href="/services">
-                      <a>User growth</a>
+                      <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
+                        View Details
+                      </a>
                     </Link>
-                  </h1>
-                  <p className="mt-2 text-xs text-gray-500">
-                    Harvard university
-                  </p>
-                </div>
-                <div>
-                  <Link href="/services">
-                    <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
-                      View Details
-                    </a>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="px-3 pb-5">
-            <div className="card-slider group">
-              <img
-                className="rounded-xl"
-                src="/assets/imgs/placeholders/img-3.jpg"
-                alt="Monst"
-              />
-              <div className="flex justify-between items-end">
-                <div>
-                  <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                    <Link href="/services">
-                      <a>Products</a>
-                    </Link>
-                  </h1>
-                  <p className="mt-2 text-xs text-gray-500">Cocacola., Co</p>
-                </div>
-                <div>
-                  <Link href="/services">
-                    <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
-                      View Details
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+          </SwiperSlide>
+        </Swiper>
+      ))} */}
 
       <div id="carausel-2-columns-1-arrows" className="flex">
         <span className="mr-4 text-blue-500 flex slick-arrow custom_prev">
@@ -113,6 +94,4 @@ const Slider1 = () => {
       </div>
     </>
   );
-};
-
-export default Slider1;
+}
