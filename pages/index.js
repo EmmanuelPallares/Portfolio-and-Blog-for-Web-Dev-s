@@ -1,6 +1,8 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { getPageProps } from "../lib/data";
+import Image from "next/image";
 import React from "react";
+import hero from "../assets/hero.svg";
 import Layout from "../components/layout/Layout";
 import Slider2 from "../components/slider/Slider2";
 import TextEffect from "../components/elements/TextEffect";
@@ -23,15 +25,20 @@ export default function Index() {
                     Committed to <span className="text-blue-500">People</span>{" "}
                     and the future
                   </h2>
-                  <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                    We are <strong className="text-blue-500">Monst</strong>, a
-                    Creative Design{" "}
+                  <p className="text-blue-500 text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
+                    We're
+                    <strong className="text-blue-500"></strong>
+                    solutions.
                     <span className="typewrite d-inline text-brand">
-                      <TextEffect text1="Web Agency" text2="Social Marketing" />
+                      <TextEffect
+                        text1="Web Agency"
+                        text2="Social Marketing"
+                        text3="Social Marketing"
+                      />
                     </span>
                   </p>
                   <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn mt-3 text-sm">
-                    Helping you maximize operations management with digitization
+                    Helping you maximize bussines model with digitization
                   </p>
                 </div>
                 <div className="text-center lg:text-left">
@@ -53,11 +60,7 @@ export default function Index() {
             </div>
             <div className="w-full lg:w-1/2 px-3 lg:bg-blueGray-10 mb-12 lg:mb-0 pb-10">
               <div className="flex items-center justify-center">
-                <img
-                  className="lg:max-w-lg"
-                  src="/assets/imgs/illustrations/eating.svg"
-                  alt="Monst"
-                />
+                <Image className="lg:max-w-lg" src={hero} alt="Monst" />
               </div>
             </div>
           </div>
@@ -72,7 +75,7 @@ export default function Index() {
                 className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
                 data-wow-delay=".1s"
               >
-                <span>Saas Solutions for </span>
+                <span>Solutions for </span>
                 <br />
                 <span className="text-blue-600">your Business </span>
                 <span>
