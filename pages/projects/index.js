@@ -8,6 +8,7 @@ export const getStaticProps = async () => {
 };
 
 export default function Test(portfolios) {
+  
   const ARRAYPORTFOLIO = portfolios.props.portfolios;
   console.log(ARRAYPORTFOLIO);
   return (
