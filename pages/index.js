@@ -2,7 +2,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import { getPageProps } from "../lib/data";
 import Image from "next/image";
 import React from "react";
-import hero from "../assets/hero.svg";
+import newlogo from "../assets/newlogo.svg";
 import TextEffect from "../components/elements/TextEffect";
 import Slider1 from "../components/slider/Slider1";
 
@@ -58,7 +58,7 @@ export default function Index() {
             </div>
             <div className="w-full lg:w-1/2 px-3 lg:bg-blueGray-10 mb-12 lg:mb-0 pb-10">
               <div className="flex items-center justify-center">
-                <Image className="lg:max-w-lg" src={hero} alt="Monst" />
+                <Image className="lg:max-w-lg" src={newlogo} alt="Monst" />
               </div>
             </div>
           </div>

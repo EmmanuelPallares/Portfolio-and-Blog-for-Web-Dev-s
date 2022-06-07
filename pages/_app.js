@@ -1,7 +1,6 @@
 import "../public/assets/css/animate.min.css";
 import React, { useEffect, useState } from "react";
 import "../public/assets/css/tailwind-built.css";
-import Preloader from "../components/elements/Preloader";
 import "swiper/css";
 import Layout from "./../components/layout/Layout";
 
