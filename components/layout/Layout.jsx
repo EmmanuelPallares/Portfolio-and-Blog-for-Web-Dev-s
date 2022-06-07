@@ -4,7 +4,6 @@ import BackToTop from "../elements/BackToTop";
 import Footer from "../Footer";
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
-import newlogo from "../../assets/newlogo.svg";
 
 const Layout = ({ children }) => {
   const [hiddenClass, setHiddenClass] = useState("hidden");
@@ -20,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Monst - NextJs Tailwind CSS Landing Page</title>
+        <title>vitoz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
