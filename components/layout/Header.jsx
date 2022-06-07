@@ -31,100 +31,52 @@ const Header = ({ handleHidden }) => {
                 <Image className="h-10" src={newlogo} alt="Monst" />
               </a>
             </Link>
+
             <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
               <li className="group relative pt-4 pb-4 has-child">
+                {/* Home */}
                 <Link href="/">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                     Home
                   </a>
                 </Link>
-                <ul className="drop-down-menu min-w-200">
-                  <li>
-                    <Link href="/">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Landing page 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-2">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Landing page 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-3">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Landing page 3
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-4">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Landing page 4
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-5">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Landing page 5
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="pt-4 pb-4">
-                <Link href="/about">
+                <Link href="/blog">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    About Us
+                    Blog
                   </a>
                 </Link>
               </li>
               <li className="pt-4 pb-4">
-                <Link href="/services">
+                <Link href="/projects">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Services
+                    Projects
                   </a>
                 </Link>
               </li>
               <li className="group relative pt-4 pb-4 has-child">
-                <Link href="#">
+                <Link href="/about">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Company
+                    About
                   </a>
                 </Link>
                 <ul className="drop-down-menu min-w-200">
                   <li>
-                    <Link href="/portfolio">
+                    <Link href="/brand">
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Portfolio
+                        Brand
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/team">
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Team
                       </a>
                     </Link>
-                  </li>
-                  <li>
-                    <Link href="/testimonials">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Testimonials
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/pricing">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Pricing
-                      </a>
-                    </Link>
-                  </li>
+                  </li> */}
+
                   <li>
                     <Link href="/faqs">
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
@@ -132,66 +84,23 @@ const Header = ({ handleHidden }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/404">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        404
-                      </a>
-                    </Link>
-                  </li>
                 </ul>
               </li>
-              <li className="group relative pt-4 pb-4 has-child">
-                <Link href="#">
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Blog
-                  </a>
-                </Link>
-                <ul className="drop-down-menu min-w-200">
-                  <li>
-                    <Link href="/blog">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Category 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-2">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Category 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Single 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single-2">
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Single 2
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+
               <li className="pt-4 pb-4">
                 <Link href="/contact">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Contact
+                    MarketPlace
                   </a>
                 </Link>
               </li>
             </ul>
             <div className="hidden lg:block">
               <Link href="/login">
-                <a className="btn-accent hover-up-2">Log In</a>
+                <a className=" hover-up-2">Log In</a>
               </Link>
               <Link href="/signup">
-                <a className="btn-primary hover-up-2">Sign Up</a>
+                <a className=" hover-up-2">Sign Up</a>
               </Link>
             </div>
             <div className="lg:hidden">

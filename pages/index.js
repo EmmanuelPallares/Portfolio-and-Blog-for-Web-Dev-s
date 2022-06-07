@@ -3,10 +3,7 @@ import { getPageProps } from "../lib/data";
 import Image from "next/image";
 import React from "react";
 import hero from "../assets/hero.svg";
-import Layout from "../components/layout/Layout";
-import Slider2 from "../components/slider/Slider2";
 import TextEffect from "../components/elements/TextEffect";
-import Link from "next/link";
 
 export default function Index() {
   return (
@@ -22,12 +19,11 @@ export default function Index() {
               <div className="py-12">
                 <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
                   <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
-                    Committed to <span className="text-blue-500">People</span>{" "}
-                    and the future
+                    Committed to <span className="">People</span> and the future
                   </h2>
-                  <p className="text-blue-500 text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
+                  <p className=" text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
                     We're
-                    <strong className="text-blue-500"></strong>
+                    <strong className=""></strong>
                     solutions.
                     <span className="typewrite d-inline text-brand">
                       <TextEffect
@@ -43,7 +39,7 @@ export default function Index() {
                 </div>
                 <div className="text-center lg:text-left">
                   <a
-                    className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animated animate__fadeIn"
+                    className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-black hover:bg-blue-500 rounded wow animate__animated animate__fadeIn"
                     href="#key-features"
                   >
                     Key Features
@@ -77,7 +73,7 @@ export default function Index() {
               >
                 <span>Solutions for </span>
                 <br />
-                <span className="text-blue-600">your Business </span>
+                <span className="">your Business </span>
                 <span>
                   Grow <br />
                   on time
@@ -102,7 +98,7 @@ export default function Index() {
                 className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                 data-wow-delay=".3s"
               >
-                <div className="text-blue-500 mx-auto mb-4">
+                <div className=" mx-auto mb-4">
                   <svg
                     className="w-8 h-8 mx-auto"
                     fill="none"
@@ -131,7 +127,7 @@ export default function Index() {
                 className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                 data-wow-delay=".5s"
               >
-                <div className="text-blue-500 mx-auto mb-4">
+                <div className=" mx-auto mb-4">
                   <svg
                     className="w-8 h-8 mx-auto"
                     fill="none"
@@ -160,7 +156,7 @@ export default function Index() {
                 className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                 data-wow-delay=".7s"
               >
-                <div className="text-blue-500 mx-auto mb-4">
+                <div className=" mx-auto mb-4">
                   <svg
                     className="w-8 h-8 mx-auto"
                     fill="none"
@@ -189,7 +185,7 @@ export default function Index() {
                 className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                 data-wow-delay=".9s"
               >
-                <div className="text-blue-500 mx-auto mb-4">
+                <div className=" mx-auto mb-4">
                   <svg
                     className="w-8 h-8 mx-auto"
                     fill="none"

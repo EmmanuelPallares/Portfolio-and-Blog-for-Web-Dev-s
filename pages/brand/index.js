@@ -3,7 +3,7 @@ import React from "react";
 const Brand = () => {
   return (
     <>
-      <div className="container m-6 p-3 text-white">
+      <div className="container mb-6 p-3 text-white">
         <div className="bg-[#E93D44] ">Red Principal</div>
         <div className="bg-[#751f22]"> Darknes Red</div>
         <div className="bg-[#AF2E33]"> Medium Red</div>
