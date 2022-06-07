@@ -1,7 +1,8 @@
-import "../styles/globals.css";
-import "../styles/animate.min.css";
-import "../styles/tailwind-built.css";
-import "../styles/slick.css";
+import "../public/assets/css/animate.min.css";
+import React, { useEffect, useState } from "react";
+import "../public/assets/css/tailwind-built.css";
+import Preloader from "../components/elements/Preloader";
+import "swiper/css";
 import Layout from "./../components/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
