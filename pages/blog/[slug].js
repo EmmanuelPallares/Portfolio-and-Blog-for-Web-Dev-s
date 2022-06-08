@@ -1,42 +1,35 @@
-import { GraphQLClient, gql } from "graphql-request";
-import { getSlugList } from "../../lib/data";
+import { getBlogSlugs, getPost } from "../../lib/data";
+import he from "he";
+import Head from "next/head";
+import Image from "next/image";
+import hydrate from "next-mdx-remote/hydrate";
+import renderToString from "next-mdx-remote/render-to-string";
 
-export async function getStaticProps({ params }) {
-  const POST = gql`
-    query ($slug: String!) {
-      blogPost(where: { slug: $slug }) {
-        slug
-      }
-    }
-  `;
-  const slug = await graphcms.request(POST, { slug: params.slug });
+export const getStaticPaths = async () => {
+  const slugsRes = await getBlogSlugs();
+  const slugs = slugsRes.posts;
 
   return {
-    props: {
-      slug,
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const list = await graphcms.getSlugList();
-  return {
-    paths: list.map((slug) => ({
-      params: {
-        slug,
-      },
-    })),
+    paths: slugs.map((slug) => ({ params: { slug: slug.slug } })),
     fallback: false,
   };
-}
+};
 
-export default function Post({ post, title, slug }) {
-  console.log(post);
+export const getStaticProps = async ({ params }) => {
+  const post = await getPost(params.slug);
+  return {
+    props: {
+      post: post.posts[0],
+      content: await renderToString(he.decode(post.posts[0].content)),
+    },
+  };
+};
+
+export default function Post({ post, content }) {
+  console.log(content);
   return (
     <>
-      hello world
-      <>{title}</>
-      <>{slug}</>
+      <div className="prose prose-xl max-w-none">{hydrate(content)}</div>
     </>
   );
 }

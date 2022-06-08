@@ -61,7 +61,7 @@ export default function Index(blogs) {
               <>
                 <div className="flex flex-wrap -mx-4 mb-12 wow animate__animated animate__fadeIn animated hover-up-5">
                   <div className="w-full lg:w-1/2 px-4 lg:pr-20 lg:pt-4 order-1 lg:order-0">
-                    <Link href="/blog">
+                    <Link href={`/blog/${slug}`}>
                       <a>
                         <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
                           Development
@@ -69,14 +69,14 @@ export default function Index(blogs) {
                       </a>
                     </Link>
                     <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-                      <Link href="/blog-single">
+                      <Link href={`/blog/${slug}`}>
                         <a className="hover:text-blue-500">{title}</a>
                       </Link>
                     </h3>
                     <p className="mb-4 text-sm md:text-base leading-loose text-blueGray-400">
                       {excerpt}
                     </p>
-                    <Link href="/blog-single">
+                    <Link href={`/blog/${slug}`}>
                       <a className="text-xs font-semibold text-blue-600">
                         <span>Read More</span>
                         <svg
@@ -97,7 +97,7 @@ export default function Index(blogs) {
                     </Link>
                   </div>
                   <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
-                    <Link href="/blog-single">
+                    <Link href={`/blog/${slug}`}>
                       <a>
                         <img
                           className="h-80 w-full object-cover rounded"
