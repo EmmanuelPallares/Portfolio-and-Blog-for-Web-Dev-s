@@ -26,7 +26,6 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export default function Post({ post, content }) {
-  console.log(content);
   return (
     <>
       <div className="prose prose-xl max-w-none">{hydrate(content)}</div>

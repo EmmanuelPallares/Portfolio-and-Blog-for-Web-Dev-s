@@ -1,15 +1,23 @@
 import { GraphQLClient, gql } from "graphql-request";
-import { getPageProps } from "../lib/data";
+
 import Image from "next/image";
 import React from "react";
 import newlogo from "../assets/newlogo.svg";
 import TextEffect from "../components/elements/TextEffect";
 import Slider1 from "../components/slider/Slider1";
+import { getIndexPortfolio } from "../lib/data";
 
-export default function Index() {
+export const getStaticProps = async () => {
+  const portfolioIndex = await getIndexPortfolio();
+
+  return {
+    props: portfolioIndex,
+  };
+};
+
+export default function Index(portfolioIndex) {
   return (
     <>
-      {" "}
       {/* Hero */}
       <section className="relative -mt-24 pt-24">
         <div
@@ -382,11 +390,10 @@ export default function Index() {
                   className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
                 >
-                  Check my latest projects
-                  <span className="text-blue-500">Custom</span> Solutions
+                  <span className="text-blue-500">Recent</span> Works
                 </h2>
                 <p
-                  className="text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
+                  className=" text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeIn text-blue-500"
                   data-wow-delay=".9s"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -400,7 +407,7 @@ export default function Index() {
                   className="carausel-2-columns slick-carausel"
                   id="carausel-2-columns-1"
                 >
-                  <Slider1 />
+                  <Slider1 props={portfolioIndex} />
                 </div>
               </div>
             </div>

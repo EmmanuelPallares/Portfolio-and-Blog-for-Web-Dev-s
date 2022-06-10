@@ -7,9 +7,9 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Test(portfolios) {
+export default function Index(portfolios) {
   const ARRAYPORTFOLIO = portfolios.props.portfolios;
-  // console.log(ARRAYPORTFOLIO);
+  console.log(ARRAYPORTFOLIO);
   return (
     <>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
@@ -24,15 +24,6 @@ export default function Test(portfolios) {
           }) => (
             <div>
               <div className="mt-6 mb-6  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                {/* <Image
-src="https://i.imgur.com/b3uHPlM.pngaTxOe"
-alt="from imgur library"
-width={800}
-height={500}
-className="object-contain rounded-t-lg max-w-sm"
-priority={true}
-/> */}
-
                 <div
                   id="default-carousel"
                   className="relative"
