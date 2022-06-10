@@ -31,16 +31,16 @@ const Slider1 = (props) => {
                 <div className="flex justify-between items-end">
                   <div>
                     <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
-                      <Link href="/services">
-                        <a>{slug}</a>
+                      <Link href={`/projects/${slug}`}>
+                        <a>{title}</a>
                       </Link>
                     </h1>
                     <p className="mt-2 text-xs text-gray-500">{slug}</p>
                   </div>
                   <div>
-                    <Link href="/services">
+                    <Link href={`/projects/${slug}`}>
                       <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
-                        {slug}
+                        Go Live-Demo
                       </a>
                     </Link>
                   </div>

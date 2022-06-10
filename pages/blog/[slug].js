@@ -1,9 +1,11 @@
+import { GraphQLClient, gql } from "graphql-request";
+
 import { getBlogSlugs, getPost } from "../../lib/data";
-import he from "he";
-import Head from "next/head";
-import Image from "next/image";
-import hydrate from "next-mdx-remote/hydrate";
-import renderToString from "next-mdx-remote/render-to-string";
+// import he from "he";
+// import Head from "next/head";
+// import Image from "next/image";
+// import hydrate from "next-mdx-remote/hydrate";
+// import renderToString from "next-mdx-remote/render-to-string";
 
 export const getStaticPaths = async () => {
   const slugsRes = await getBlogSlugs();
@@ -20,7 +22,7 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       post: post.posts[0],
-      content: await renderToString(he.decode(post.posts[0].content)),
+      // content: await renderToString(he.decode(post.posts[0].content)),
     },
   };
 };
@@ -28,7 +30,7 @@ export const getStaticProps = async ({ params }) => {
 export default function Post({ post, content }) {
   return (
     <>
-      <div className="prose prose-xl max-w-none">{hydrate(content)}</div>
+      <div className="prose prose-xl max-w-none">dddddddddddddddddddddddd</div>
     </>
   );
 }
