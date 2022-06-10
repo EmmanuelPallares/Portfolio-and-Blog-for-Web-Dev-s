@@ -1,52 +1,46 @@
 import SwiperCore, { Navigation } from "swiper";
-import { getBlogProps } from "../../lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-export const getStaticProps = async () => {
-  const blogsIndex = await getBlogProps();
-
-  return {
-    props: blogsIndex,
-  };
-};
+import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
-export default function Slider1(blogsIndex) {
+const Slider1 = (props) => {
+  console.log(props.props.portfolios);
   return (
     <>
-      {/* {blogs.map(({ blog, title, excerpt, coverImage }) => (
-        <Swiper
-          slidesPerView={2}
-          spaceBetween={30}
-          loop={true}
-          navigation={{
-            prevEl: ".custom_prev",
-            nextEl: ".custom_next",
-          }}
-          className="custom-class"
-        >
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        loop={true}
+        navigation={{
+          prevEl: ".custom_prev",
+          nextEl: ".custom_next",
+        }}
+        className="custom-class"
+      >
+        {props.props.portfolios.map(({ title, imagePortfolioOne, slug }) => (
           <SwiperSlide>
             <div className="px-3 pb-5">
               <div className="card-slider group">
-                <Image
+                <img
                   className="rounded-xl"
-                  src={coverImage.url}
+                  src={imagePortfolioOne.url}
                   alt="Monst"
                 />
                 <div className="flex justify-between items-end">
                   <div>
                     <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
                       <Link href="/services">
-                        <a>{title}</a>
+                        <a>{slug}</a>
                       </Link>
                     </h1>
-                    <p className="mt-2 text-xs text-gray-500">{excerpt}</p>
+                    <p className="mt-2 text-xs text-gray-500">{slug}</p>
                   </div>
                   <div>
                     <Link href="/services">
                       <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
-                        View Details
+                        {slug}
                       </a>
                     </Link>
                   </div>
@@ -54,8 +48,8 @@ export default function Slider1(blogsIndex) {
               </div>
             </div>
           </SwiperSlide>
-        </Swiper>
-      ))} */}
+        ))}
+      </Swiper>
 
       <div id="carausel-2-columns-1-arrows" className="flex">
         <span className="mr-4 text-blue-500 flex slick-arrow custom_prev">
@@ -93,4 +87,6 @@ export default function Slider1(blogsIndex) {
       </div>
     </>
   );
-}
+};
+
+export default Slider1;
