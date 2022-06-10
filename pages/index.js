@@ -410,22 +410,3 @@ export default function Index() {
     </>
   );
 }
-
-export async function get() {
-  const client = GraphQLClient;
-
-  const { page } = await client.request(getPageProps, {
-    locale,
-    slug: "home",
-  });
-
-  const parsedPageData = await parsePageData(page);
-
-  return {
-    props: {
-      page: parsedPageData,
-      preview,
-    },
-    revalidate: 60,
-  };
-}
