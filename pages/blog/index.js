@@ -42,11 +42,11 @@ export default function Index(blogs) {
               </a>
             </li>
           </ul>
-          <div className="flex -mx-3">
+          <div className="flex flex-wrap -mx-3">
             {ARRAYBLOGS.map(
               ({ blog, index, title, coverImage, slug, content, excerpt }) => (
                 <div
-                  className="w-full lg:w-1/2 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
+                  className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
                   data-wow-delay=".1s"
                 >
                   <Link href={`/blog/${slug}`}>
