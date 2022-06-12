@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
 
 export default function Index(portfolios) {
   const ARRAYPORTFOLIO = portfolios.props.portfolios;
-  console.log(ARRAYPORTFOLIO);
+  // console.log(ARRAYPORTFOLIO);
   return (
     <>
       <section className="py-20">

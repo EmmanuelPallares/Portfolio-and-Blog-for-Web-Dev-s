@@ -30,22 +30,24 @@ export default function Index(portfolioIndex) {
               <div className="py-12">
                 <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
                   <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
-                    Committed to <span className="">People</span> and the future
+                    {`Committed to `}
+                    <span className="">{`People`}</span>
+                    {` and the future`}
                   </h2>
                   <p className=" text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                    We're
+                    {`We're `}
                     <strong className=""></strong>
-                    solutions.
+                    {`solutions `}
                     <span className="typewrite d-inline text-brand">
                       <TextEffect
-                        text1="Web Agency"
-                        text2="Social Marketing"
-                        text3="Social Marketing"
+                        text1={`digital presence.`}
+                        text2={`manage information.`}
+                        text3={`innovate products.`}
                       />
                     </span>
                   </p>
                   <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn mt-3 text-sm">
-                    Helping you maximize bussines model with digitization
+                    {`Helping you maximize bussines model with digitization.`}
                   </p>
                 </div>
                 <div className="text-center lg:text-left">
