@@ -16,8 +16,7 @@ export const getStaticProps = async () => {
 export default function Index(portfolioIndex) {
   return (
     <>
-      {/* Hero */}
-      <section className="relative -mt-24 pt-24">
+      {/* <section className="relative -mt-24 pt-24">
         <div
           className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0"
           style={{ "z-index": "-1" }}
@@ -72,7 +71,7 @@ export default function Index(portfolioIndex) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Bussines Solutions */}
       <section className="pt-16 pb-20" id="key-features">
         <div className="container">
@@ -180,9 +179,9 @@ export default function Index(portfolioIndex) {
                 <h3 className="mb-2 font-bold font-heading">{`Cloud Solutions`}</h3>
 
                 <p className="text-sm text-blueGray-400">
-                  We believe brand interaction is key to communication. Real
-                  innovations and positive customer experience are the heart of
-                  success.
+                  {`Cloud solutions can help improve efficiency and agility,
+                  reduce cost, participate in new business models,
+                  and capture new market opportunities.`}
                 </p>
               </div>
             </div>
@@ -210,7 +209,8 @@ export default function Index(portfolioIndex) {
                   {`Custom Services`}
                 </h3>
                 <p className="text-sm text-blueGray-400">
-                  {`We will deliver you marketing and technology solutions to achieve your company's goals in the best way.`}
+                  {`Custom services is the way to explore, discover, test, and more. Gives
+                  space to creativity for any interested in build next revolution legacy.`}
                 </p>
               </div>
             </div>
@@ -346,11 +346,12 @@ export default function Index(portfolioIndex) {
                 className="wow animate__animated animate__fadeIn"
                 data-wow-delay=".5s"
               >
-                <img
-                  className="jump relative mx-auto rounded-xl w-full z-10"
-                  src="/assets/imgs/placeholders/img-1.png"
-                  alt="Monst"
-                />
+                <video width="100%" controls>
+                  <source
+                    src="https://media.graphassets.com/Z7qbpMBeT4OjtYOKF56J"
+                    type="video/mp4"
+                  />
+                </video>
                 <img
                   className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
                   src="/assets/imgs/elements/blob-tear.svg"
