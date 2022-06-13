@@ -1,5 +1,3 @@
-import { GraphQLClient, gql } from "graphql-request";
-
 import Image from "next/image";
 import React from "react";
 import newlogo from "../assets/newlogo.svg";
@@ -98,10 +96,7 @@ export default function Index(portfolioIndex) {
                 className="lg:pl-16 text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
                 data-wow-delay=".4s"
               >
-                Business solution company sit our any how site used the our
-                company any site us it-solve theme is very professional theme
-                business & corporate, finance, advisor, solution, company and
-                all project used, there are all kinds of websites here.
+                {`All my products are ruled for a unique features exclusive it´s online existence. Check them out or watch the video. `}
               </p>
             </div>
           </div>
@@ -120,18 +115,16 @@ export default function Index(portfolioIndex) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                    ></path>
+                      fill-rule="evenodd"
+                      d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-bold font-heading">IT Consultancy</h3>
+                <h3 className="mb-2 font-bold font-heading">{`Web Development`}</h3>
                 <p className="text-sm text-blueGray-400">
-                  We believe brand interaction is key to communication. Real
-                  innovations and positive customer experience are the heart of
-                  success.
+                  {`Web development are one of the most popular business solutions, 
+                  which combines high advantages with ease mantenance.`}
                 </p>
               </div>
             </div>
@@ -151,16 +144,16 @@ export default function Index(portfolioIndex) {
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    ></path>
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-bold font-heading">Web Development</h3>
+                <h3 className="mb-2 font-bold font-heading">{`Web Design`}</h3>
+
                 <p className="text-sm text-blueGray-400">
-                  We believe brand interaction is key to communication. Real
-                  innovations and positive customer experience are the heart of
-                  success.
+                  {`Digital design has become an increasingly
+                   important area for a business. With the right
+                    design stand out from your competition. `}
                 </p>
               </div>
             </div>
@@ -178,14 +171,14 @@ export default function Index(portfolioIndex) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    ></path>
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                    />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-bold font-heading">App Development</h3>
+                <h3 className="mb-2 font-bold font-heading">{`Cloud Solutions`}</h3>
+
                 <p className="text-sm text-blueGray-400">
                   We believe brand interaction is key to communication. Real
                   innovations and positive customer experience are the heart of
@@ -209,24 +202,15 @@ export default function Index(portfolioIndex) {
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                    ></path>
+                      d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8"
+                    />
                   </svg>
                 </div>
                 <h3 className="mb-2 font-bold font-heading">
-                  Digital Marketing
+                  {`Custom Services`}
                 </h3>
                 <p className="text-sm text-blueGray-400">
-                  We believe brand interaction is key to communication. Real
-                  innovations and positive customer experience are the heart of
-                  success.
+                  {`We will deliver you marketing and technology solutions to achieve your company's goals in the best way.`}
                 </p>
               </div>
             </div>
@@ -250,13 +234,13 @@ export default function Index(portfolioIndex) {
                     className="text-xs py-1 px-3  font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
                     data-wow-delay=".9s"
                   >
-                    Why choose us
+                    {`Why choose us`}
                   </span>
                   <h2
                     className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
                     data-wow-delay=".3s"
                   >
-                    Key Features
+                    {`Key Features`}
                   </h2>
                 </div>
                 <div
