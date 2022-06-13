@@ -16,63 +16,117 @@ export const getStaticProps = async () => {
 export default function Index(portfolioIndex) {
   return (
     <>
-      {/* <section className="relative -mt-24 pt-24">
-        <div
-          className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0"
-          style={{ "z-index": "-1" }}
-        ></div>
+      {/* Bussines Solutions */}
+
+      <section
+        className="pb-8 bg-top bg-cover bg-no-repeat relative -mt-24 pt-24"
+        style={{
+          backgroundImage:
+            "url('https://media.graphassets.com/Ct2JijaNTc5NhVlfv35b')",
+        }}
+      >
+        <div className="hidden md:block absolute top-0 left-0 mt-32">
+          <img
+            className="h-64 lg:h-80 jump"
+            src="https://media.graphassets.com/OnMhFL3wQ4eJZfb4GxgJ"
+            alt="Monst"
+          />
+        </div>
+        <div className="hidden md:block absolute top-0 right-0 mt-32">
+          <img
+            className="h-64 lg:h-80 jump"
+            src="https://media.graphassets.com/gls4d8xjQRC7FWMPQ2I1"
+            alt="Monst"
+          />
+        </div>
         <div className="container">
-          <div className="flex flex-wrap items-center -mx-3">
-            <div className="w-full lg:w-1/2 px-3">
-              <div className="py-12">
-                <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
-                  <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
-                    {`Committed to `}
-                    <span className="">{`People`}</span>
-                    {` and the future`}
-                  </h2>
-                  <p className=" text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                    {`We're `}
-                    <strong className=""></strong>
-                    {`solutions `}
-                    <span className="typewrite d-inline text-brand">
-                      <TextEffect
-                        text1={`digital presence.`}
-                        text2={`manage information.`}
-                        text3={`innovate products.`}
-                      />
-                    </span>
-                  </p>
-                  <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn mt-3 text-sm">
-                    {`Helping you maximize bussines model with digitization.`}
-                  </p>
-                </div>
-                <div className="text-center lg:text-left">
-                  <a
-                    className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-black hover:bg-blue-500 rounded wow animate__animated animate__fadeIn"
-                    href="#key-features"
-                  >
-                    Key Features
-                  </a>
-                  <a
-                    className="block hover-up-2 sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animated animate__fadeIn"
-                    data-wow-delay=".3s"
-                    href="#how-we-work"
-                  >
-                    How We Work?
-                  </a>
-                </div>
-              </div>
+          <div className="py-12 text-center">
+            <div className="max-w-2xl mx-auto mb-8">
+              <h2 className="text-white text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
+                {`Committed to People. `}
+                <br />
+                <span className="text-bg-blue-400">{`Committed to the Future.`}</span>
+              </h2>
+              <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
+                {`I'm `}
+                <strong className="text-blue-500">{`developer `}</strong>
+                <TextEffect
+                  speed={1000}
+                  text1={`, a freelancer with a passion for building web applications. `}
+                />
+                <br />
+              </p>
             </div>
-            <div className="w-full lg:w-1/2 px-3 lg:bg-blueGray-10 mb-12 lg:mb-0 pb-10">
-              <div className="flex items-center justify-center">
-                <Image className="lg:max-w-lg" src={newlogo} alt="Monst" />
-              </div>
+            <div>
+              <a
+                className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animated animate__fadeIn"
+                href="#key-features"
+              >
+                {`Exclusive Features`}
+              </a>
+              <a
+                className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white rounded wow animate__animated animate__fadeIn"
+                data-wow-delay=".3s"
+                href="#how-we-work"
+              >
+                How We Work?
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-12 pb-4">
+            <div
+              className="w-1/2 md:w-1/3 lg:w-1/5 px-8 mb-8 wow animate__animated animate__fadeIn"
+              data-wow-delay=".1s"
+            >
+              <img
+                className="mx-auto"
+                src="https://media.graphassets.com/iktwoq8oR6rjhxAsQlSg"
+                alt="Monst"
+              />
+            </div>
+            <div
+              className="w-1/2 md:w-1/3 lg:w-1/5 px-8 mb-8 wow animate__animated animate__fadeIn"
+              data-wow-delay=".3s"
+            >
+              <img
+                className="mx-auto"
+                src="/assets/imgs/logos/brands/brand-2.png"
+                alt="Monst"
+              />
+            </div>
+            <div
+              className="w-1/2 md:w-1/3 lg:w-1/5 px-8 mb-8 wow animate__animated animate__fadeIn"
+              data-wow-delay=".5s"
+            >
+              <img
+                className="mx-auto"
+                src="/assets/imgs/logos/brands/brand-3.png"
+                alt="Monst"
+              />
+            </div>
+            <div
+              className="w-1/2 md:w-1/3 lg:w-1/5 px-8 mb-8 wow animate__animated animate__fadeIn"
+              data-wow-delay=".7s"
+            >
+              <img
+                className="mx-auto"
+                src="/assets/imgs/logos/brands/brand-4.png"
+                alt="Monst"
+              />
+            </div>
+            <div
+              className="hidden md:block w-1/2 md:w-1/3 lg:w-1/5 px-8 mb-8 wow animate__animated animate__fadeIn"
+              data-wow-delay=".9s"
+            >
+              <img
+                className="mx-auto"
+                src="/assets/imgs/logos/brands/brand-5.png"
+                alt="Monst"
+              />
             </div>
           </div>
         </div>
-      </section> */}
-      {/* Bussines Solutions */}
+      </section>
       <section className="pt-16 pb-20" id="key-features">
         <div className="container">
           <div className="flex flex-wrap items-center mb-12">
@@ -240,7 +294,7 @@ export default function Index(portfolioIndex) {
                     className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
                     data-wow-delay=".3s"
                   >
-                    {`Key Features`}
+                    {`Exclusive features`}
                   </h2>
                 </div>
                 <div
@@ -265,11 +319,10 @@ export default function Index(portfolioIndex) {
                   </div>
                   <div>
                     <h3 className="mb-2 text-xl font-semibold font-heading">
-                      Expand Your Reach
+                      {`Next generation of software`}
                     </h3>
                     <p className="text-blueGray-400 leading-loose">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Veritatis expedita animi.
+                      {`We use functional programming techniques to build the next generation of software. Focused always on the best practices and the latest technologies.`}
                     </p>
                   </div>
                 </div>
@@ -301,11 +354,11 @@ export default function Index(portfolioIndex) {
                   </div>
                   <div>
                     <h3 className="mb-2 text-xl font-semibold font-heading">
-                      Annualized Growth
+                      {`Modern and responsive`}
                     </h3>
                     <p className="text-blueGray-400 leading-loose">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Veritatis expedita animi.
+                      {`The best way to get a premium software product is combined techniques from specialists and merge. 
+                      I had a lot of resources free and paid for around the world.`}
                     </p>
                   </div>
                 </div>
@@ -331,11 +384,10 @@ export default function Index(portfolioIndex) {
                   </div>
                   <div>
                     <h3 className="mb-2 text-xl font-semibold font-heading">
-                      Book Your Providers
+                      {`Research and development`}
                     </h3>
                     <p className="text-blueGray-400 leading-loose">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Veritatis expedita animi.
+                      {`We are always looking for new ways to improve our products.`}
                     </p>
                   </div>
                 </div>

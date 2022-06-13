@@ -15,8 +15,9 @@ const Brand = () => {
       </div>
       <div className="container m-6 p-3 text-white">
         <div className="bg-[#222529]">Darkness Gray</div>
+        <div className="bg-[#010303]">Hero gradient image</div>
         <div className="bg-[#4e5154]"> Medium Gray</div>
-        <div className="bg-[#D3D3D4] text-[#111823]"> Light Gray</div>
+        <div className="bg-[#D3D3D4] text-[#111823]">Light Gray</div>
       </div>
     </>
   );
