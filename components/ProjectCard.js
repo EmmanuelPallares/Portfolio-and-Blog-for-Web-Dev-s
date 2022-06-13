@@ -8,7 +8,6 @@ export const getStaticProps = async () => {
 };
 export default function ProjectCard(portfolios) {
   const ARRAYPORTFOLIO = portfolios.props;
-  
 
   return (
     <div className="mt-6 mb-6  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -24,7 +23,7 @@ export default function ProjectCard(portfolios) {
       <div id="default-carousel" className="relative" data-carousel="static">
         <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
           <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+            className="duration-700 ease-in-out absolute inset-0 transition-all  translate-x-0 z-20"
             data-carousel-item="1"
           >
             <span className="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">
@@ -38,7 +37,7 @@ export default function ProjectCard(portfolios) {
           </div>
 
           <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+            className="duration-700 ease-in-out absolute inset-0 transition-all  translate-x-full z-10"
             data-carousel-item=""
           >
             <img
@@ -49,7 +48,7 @@ export default function ProjectCard(portfolios) {
           </div>
 
           <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+            className="duration-700 ease-in-out absolute inset-0 transition-all  -translate-x-full z-10"
             data-carousel-item=""
           >
             <img
