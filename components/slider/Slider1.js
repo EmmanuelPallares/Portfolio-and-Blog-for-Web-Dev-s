@@ -5,7 +5,6 @@ import Link from "next/link";
 SwiperCore.use([Navigation]);
 
 const Slider1 = (props) => {
-  console.log(props.props.portfolios);
   return (
     <>
       <Swiper
@@ -20,8 +19,8 @@ const Slider1 = (props) => {
       >
         {props.props.portfolios.map(
           ({ id, title, imagePortfolioOne, slug }) => (
-            <SwiperSlide>
-              <div key={slug} className="px-3 pb-5">
+            <SwiperSlide key={id}>
+              <div className="px-3 pb-5">
                 <div className="card-slider group">
                   <img
                     className="rounded-xl"
