@@ -15,8 +15,7 @@
     "he": "^1.2.0",
     "jquery": "^3.6.0",
     "next": "^12.1.6",
-    "next-mdx-remote": "^2.1.4",
-    "postcss": "^8.4.14",
+    "next-mdx-remote": "^4.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scroll-up": "^1.3.7",
@@ -24,13 +23,14 @@
     "react-visibility-sensor": "^5.1.1",
     "react-wow": "^1.0.0",
     "swiper": "^7.3.2",
-    "tailwindcss": "^2.1.2",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.5",
+    "autoprefixer": "^10.4.7",
     "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
   }
 }

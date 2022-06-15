@@ -1,7 +1,6 @@
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
@@ -19,36 +18,38 @@ const Slider1 = (props) => {
         }}
         className="custom-class"
       >
-        {props.props.portfolios.map(({ id,title, imagePortfolioOne, slug }) => (
-          <SwiperSlide key={id}>
-            <div className="px-3 pb-5">
-              <div className="card-slider group">
-                <img
-                  className="rounded-xl"
-                  src={imagePortfolioOne.url}
-                  alt="Monst"
-                />
-                <div className="flex justify-between items-end">
-                  <div>
-                    <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
+        {props.props.portfolios.map(
+          ({ id, title, imagePortfolioOne, slug }) => (
+            <SwiperSlide>
+              <div key={slug} className="px-3 pb-5">
+                <div className="card-slider group">
+                  <img
+                    className="rounded-xl"
+                    src={imagePortfolioOne.url}
+                    alt="Monst"
+                  />
+                  <div className="flex justify-between items-end">
+                    <div>
+                      <h1 className="mt-5 text-xl font-semibold group-hover:text-blue-500">
+                        <Link href={`/projects/${slug}`}>
+                          <a>{title}</a>
+                        </Link>
+                      </h1>
+                      <p className="mt-2 text-xs text-gray-500">{slug}</p>
+                    </div>
+                    <div>
                       <Link href={`/projects/${slug}`}>
-                        <a>{title}</a>
+                        <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
+                          Go Live-Demo
+                        </a>
                       </Link>
-                    </h1>
-                    <p className="mt-2 text-xs text-gray-500">{slug}</p>
-                  </div>
-                  <div>
-                    <Link href={`/projects/${slug}`}>
-                      <a className="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 font-semibold leading-none border border-blue-200 hover:border-blue-500 hover:text-white hover:bg-blue-500 rounded">
-                        Go Live-Demo
-                      </a>
-                    </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          )
+        )}
       </Swiper>
 
       <div id="carausel-2-columns-1-arrows" className="flex">
