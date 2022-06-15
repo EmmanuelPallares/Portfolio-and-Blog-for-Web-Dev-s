@@ -12,7 +12,7 @@ const PortfolioPreview = () => {
                   className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
                 >
-                  Simple Solution for <span className="">Complex</span>{" "}
+                  Simple Solution for <span className="">Complex</span>
                   Connections
                 </h2>
                 <p

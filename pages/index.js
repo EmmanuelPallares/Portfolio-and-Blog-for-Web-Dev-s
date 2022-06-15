@@ -1,24 +1,28 @@
-import Slider1 from "../components/slider/Slider1";
+import { getLatestBlogProps } from "../lib/data";
+
 import { getIndexPortfolio } from "../lib/data";
 import Hero from "../components/monst/Hero";
+import LatestBlogs from "../components/monst/LatestBlog";
 import BussinesSolution from "../components/monst/BussinesSolution";
 import WhyUs from "../components/monst/WhyUs";
 
 export const getStaticProps = async () => {
-  const portfolioIndex = await getIndexPortfolio();
-
+  const latestblogs = await getLatestBlogProps();
   return {
-    props: portfolioIndex,
+    props: latestblogs,
   };
 };
 
-export default function Index(portfolioIndex) {
+export default function Index(latestblogs) {
+  const ARRAYLATESTBLOG = latestblogs.props.blogPosts;
+
   return (
     <>
       <Hero />
       <BussinesSolution />
       <WhyUs />
-      <section className="py-12 md:py-20">
+      <LatestBlogs props={latestblogs} />
+      {/* <section className="py-12 md:py-20">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap -mx-3">
             <div className="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
@@ -38,8 +42,8 @@ export default function Index(portfolioIndex) {
                 </p>
               </div>
             </div>
-            <div className="w-full lg:w-2/3 flex flex-wrap">
-              <div className="relative w-full">
+             <div className="sm:w-12 md:w-full lg:w-1/3 xl:w-1/4 flex flex-wrap">
+              <div className="relative sm:w-12 md:w-full lg:w-1/3 xl:w-1/4">
                 <div
                   className="carausel-2-columns slick-carausel"
                   id="carausel-2-columns-1"
@@ -47,10 +51,10 @@ export default function Index(portfolioIndex) {
                   <Slider1 props={portfolioIndex} />
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

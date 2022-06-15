@@ -29,7 +29,7 @@ const Slider1 = (props) => {
                   />
                   <div className="flex justify-between items-end">
                     <div>
-                      <h1 className="mt-5 text-xl font-semibold group-hover:text-[#111823]">
+                      <h1 className="mt-5 sm-text-md text-xl font-semibold group-hover:text-[#111823]">
                         <Link href={`/projects/${slug}`}>
                           <a>{title}</a>
                         </Link>
@@ -37,9 +37,7 @@ const Slider1 = (props) => {
                     </div>
                     <div>
                       <Link href={`/projects/${slug}`}>
-                        <a className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-[#111823]  rounded wow animate__animated animate__fadeIn ">
-                          Read more
-                        </a>
+                        <a className="">Read more</a>
                       </Link>
                     </div>
                   </div>
