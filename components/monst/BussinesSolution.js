@@ -24,7 +24,8 @@ const BussinesSolution = () => {
               className="lg:pl-16 text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
               data-wow-delay=".4s"
             >
-              {`All my products are ruled for a unique features exclusive it´s online existence. Check them out or watch the video. `}
+              {`For example if you want to increase the productivity, help with the interaction with their clients, grow your brand, ERP solutions, analitical tools, manage inventary,
+              and many more, we can help you. I believe in a custom code can empower with cloud services is the denitive way and company process in the future.`}
             </p>
           </div>
         </div>

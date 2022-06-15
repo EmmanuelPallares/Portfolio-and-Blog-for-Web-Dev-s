@@ -27,40 +27,41 @@ const Footer = () => {
             </div>
             <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
-                Office
+                Languages
               </p>
               <p className="lg:text-lg text-blueGray-400">
-                359 Hidden Valley Road, NY
+                English and Spanish
               </p>
             </div>
             <div className="w-full lg:w-1/5 px-3">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
-                Contacts
+                E-mail
               </p>
-              <p className="lg:text-lg text-blueGray-400">(+01) 234 568</p>
-              <p className="lg:text-lg text-blueGray-400">contact@monst.com</p>
+
+              <p className="lg:text-lg text-blueGray-400">
+                emmanuelpallares50@gmail.com
+              </p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:justify-between">
-            <p className="text-sm text-blueGray-400">
-              &copy; 2022. All rights reserved. Designed by{" "}
+            <p className="text-sm text-[#111823]">
+              &copy; 2022. All rights reserved.
               <a
-                className="text-blue-400"
-                href="https://alithemes.com"
+                className="text-[#E93D44]"
+                href="https://vitoz.dev"
                 target="_blank"
               >
-                Alithemes.com
+                {" "}
+                <br />
+                vitoz.dev
               </a>
             </p>
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
-              <a className="inline-block px-2" href="https://facebook.com">
-                <img src="/assets/imgs/icons/facebook-blue.svg" alt="Monst" />
-              </a>
-              <a className="inline-block px-2" href="https://twitter.com">
+              <a
+                className="inline-block px-2"
+                href="https://twitter.com/EPallaresDev"
+              >
                 <img src="/assets/imgs/icons/twitter-blue.svg" alt="Monst" />
-              </a>
-              <a className="inline-block px-2" href="https://www.instagram.com">
-                <img src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
               </a>
             </div>
           </div>

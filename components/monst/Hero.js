@@ -30,21 +30,23 @@ const Hero = () => {
             <h2 className="text-white text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
               {`Committed to People. `}
               <br />
-              <span className="text-bg-blue-400">{`Committed to the Future.`}</span>
+              <span className="">{`Committed `}</span>
+              <span className="text-[#E93D44]">{`to the Future.`}</span>
             </h2>
             <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
               {`I'm `}
-              <strong className="text-blue-500">{`developer `}</strong>
+              <strong className="text-[#E93D44]">{`developer `}</strong>
               <TextEffect
                 speed={1000}
                 text1={`, a freelancer with a passion for building web applications. `}
+                className="text-[#4e5154]"
               />
               <br />
             </p>
           </div>
           <div>
             <a
-              className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animated animate__fadeIn"
+              className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-[#111823]  rounded wow animate__animated animate__fadeIn"
               href="#key-features"
             >
               {`Exclusive Features`}

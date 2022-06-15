@@ -3,7 +3,6 @@ import { getIndexPortfolio } from "../lib/data";
 import Hero from "../components/monst/Hero";
 import BussinesSolution from "../components/monst/BussinesSolution";
 import WhyUs from "../components/monst/WhyUs";
-import PortfolioPreviewIndex from "../components/monst/PortfolioPreviewIndex";
 
 export const getStaticProps = async () => {
   const portfolioIndex = await getIndexPortfolio();
@@ -14,8 +13,6 @@ export const getStaticProps = async () => {
 };
 
 export default function Index(portfolioIndex) {
-
-
   return (
     <>
       <Hero />
@@ -30,10 +27,10 @@ export default function Index(portfolioIndex) {
                   className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
                 >
-                  <span className="text-blue-500">Recent</span> Works
+                  <span className="text-[#E93D44]">Recent</span> Works
                 </h2>
                 <p
-                  className=" text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeIn text-blue-500"
+                  className="text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeIn text-[#E93D44]"
                   data-wow-delay=".9s"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed

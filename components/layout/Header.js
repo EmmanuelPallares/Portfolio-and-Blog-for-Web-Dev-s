@@ -33,7 +33,7 @@ const Header = ({ handleHidden }) => {
             </Link>
 
             <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-              <li className="group relative pt-4 pb-4 has-child">
+              <li className="pt-4 pb-4">
                 {/* Home */}
                 <Link href="/">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
