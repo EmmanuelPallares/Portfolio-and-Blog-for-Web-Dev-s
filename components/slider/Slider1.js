@@ -19,8 +19,8 @@ const Slider1 = (props) => {
         }}
         className="custom-class"
       >
-        {props.props.portfolios.map(({ title, imagePortfolioOne, slug }) => (
-          <SwiperSlide>
+        {props.props.portfolios.map(({ id,title, imagePortfolioOne, slug }) => (
+          <SwiperSlide key={id}>
             <div className="px-3 pb-5">
               <div className="card-slider group">
                 <img

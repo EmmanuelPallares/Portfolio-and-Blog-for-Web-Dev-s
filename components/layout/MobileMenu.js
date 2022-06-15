@@ -66,69 +66,32 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     Home
                   </a>
                 </Link>
-                <ul className={isActive.key == 1 ? "dropdown pl-5" : "hidden"}>
-                  <li>
-                    <Link href="/index">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Home 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-2">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Home 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-3">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Home 3
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-4">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Home 4
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/index-5">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Home 5
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="mb-1 rounded-xl">
                 <Link href="/about">
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
-                    About Us
+                    Blog
                   </a>
                 </Link>
               </li>
               <li className="mb-1">
                 <Link href="/services">
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Services
+                    Projects
                   </a>
                 </Link>
               </li>
               <li className="mb-1">
                 <Link href="/portfolio">
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Portfolio
+                    About
                   </a>
                 </Link>
               </li>
               <li className="mb-1">
                 <Link href="/pricing">
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Pricing
+                    MarketPlace
                   </a>
                 </Link>
               </li>
@@ -153,67 +116,16 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     Blog
                   </a>
                 </Link>
-                <ul className={isActive.key == 2 ? "dropdown pl-5" : "hidden"}>
-                  <li>
-                    <Link href="/blog">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Category 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-2">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Category 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Single 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single-2">
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Single 2
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-1">
-                <Link href="/faqs">
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Faqs
-                  </a>
-                </Link>
-              </li>
-              <li className="mb-1">
-                <Link href="/testimonials">
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Testimonial
-                  </a>
-                </Link>
-              </li>
-              <li className="mb-1">
-                <Link href="/contact">
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                    Contact Us
-                  </a>
-                </Link>
               </li>
             </ul>
             <div className="mt-4 pt-6 border-t border-blueGray-100">
               <Link href="/signup">
-                <a className="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 text-white rounded">
+                <a className="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-purple-500-400 hover:bg-blue-500 text-white rounded">
                   Sign Up
                 </a>
               </Link>
               <Link href="/login">
-                <a className="block px-4 py-3 mb-2 text-xs text-center text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded">
+                <a className="block px-4 py-3 mb-2 text-xs text-center text-green-500-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded">
                   Log In
                 </a>
               </Link>

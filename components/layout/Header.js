@@ -97,10 +97,10 @@ const Header = ({ handleHidden }) => {
             </ul>
             <div className="hidden lg:block">
               <Link href="/login">
-                <a className=" hover-up-2">Log In</a>
+                <a className=" hover-up-2 bg-red-700">Log In</a>
               </Link>
               <Link href="/signup">
-                <a className=" hover-up-2">Sign Up</a>
+                <a className=" hover-up-2 bg-[#fff]">Sign Up</a>
               </Link>
             </div>
             <div className="lg:hidden">

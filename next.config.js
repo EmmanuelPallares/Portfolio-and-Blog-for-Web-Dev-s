@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    nextScriptWorkers: true,
+  },
   cleanDistDir: false,
   images: {
     disableStaticImages: true,
