@@ -18,12 +18,15 @@ export const getStaticProps = async ({ params }) => {
     },
   };
 };
-export default function Home({ portfolioItem, content }) {
+export default function Home({ portfolioItem, content,seo }) {
   return (
     <div>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
         <h1 className="text-6xl text-gray-900 font-bold">
-          {portfolioItem.title}
+          {title}
+        </h1>
+        <h1 className="text-6xl text-gray-900 font-bold">
+          {portfolioItem.seo}
         </h1>
       </div>
     </div>

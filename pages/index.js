@@ -1,6 +1,4 @@
-import { getLatestBlogProps } from "../lib/data";
-
-import { getIndexPortfolio } from "../lib/data";
+import { getLatestBlogProps, getEachSeoBlog, getSeosProps } from "../lib/data";
 import Hero from "../components/monst/Hero";
 import LatestBlogs from "../components/monst/LatestBlog";
 import BussinesSolution from "../components/monst/BussinesSolution";
@@ -13,9 +11,10 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Index(latestblogs) {
-  const ARRAYLATESTBLOG = latestblogs.props.blogPosts;
 
+
+export default function Index(latestblogs, seoItem) {
+  console.log(seoItem);
   return (
     <>
       <Hero />
