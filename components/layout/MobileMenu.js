@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import newlogo from "../../assets/newlogo.svg";
+
 import Link from "next/link";
 
 const MobileMenu = ({ hiddenClass, handleRemove }) => {
@@ -34,7 +35,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                 <Image className="h-10" src={newlogo} alt="Monst" />
               </a>
             </Link>
-            <button className="navbar-close" onClick={handleToggle}>
+            <button className="navbar-close" onClick={handleRemove}>
               <svg
                 className="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-dark"
                 xmlns="http://www.w3.org/2000/svg"

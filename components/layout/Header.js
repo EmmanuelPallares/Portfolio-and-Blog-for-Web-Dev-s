@@ -95,14 +95,7 @@ const Header = ({ handleHidden }) => {
                 </Link>
               </li>
             </ul>
-            <div className="hidden lg:block">
-              <Link href="/login">
-                <a className=" hover-up-2 bg-red-700">Log In</a>
-              </Link>
-              <Link href="/signup">
-                <a className=" hover-up-2 bg-[#fff]">Sign Up</a>
-              </Link>
-            </div>
+            <div className="hidden lg:block"></div>
             <div className="lg:hidden">
               <button
                 className="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"

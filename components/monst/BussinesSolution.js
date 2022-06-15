@@ -12,7 +12,7 @@ const BussinesSolution = () => {
             >
               <span>Solutions for </span>
               <br />
-              <span className="">your Business </span>
+              <span className="text-[#E93D44]">your Business </span>
               <span>
                 Grow <br />
                 on time
@@ -35,9 +35,9 @@ const BussinesSolution = () => {
               className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
               data-wow-delay=".3s"
             >
-              <div className=" mx-auto mb-4">
+              <div className="mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 mx-auto"
+                  className="w-8 h-8 mx-auto text-[#111823]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ const BussinesSolution = () => {
               className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
               data-wow-delay=".5s"
             >
-              <div className=" mx-auto mb-4">
+              <div className=" mx-auto mb-4 text-[#111823]">
                 <svg
                   className="w-8 h-8 mx-auto"
                   fill="none"
@@ -91,7 +91,7 @@ const BussinesSolution = () => {
               className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
               data-wow-delay=".7s"
             >
-              <div className=" mx-auto mb-4">
+              <div className=" mx-auto mb-4 text-[#111823]">
                 <svg
                   className="w-8 h-8 mx-auto"
                   fill="none"
@@ -120,7 +120,7 @@ const BussinesSolution = () => {
               className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
               data-wow-delay=".9s"
             >
-              <div className=" mx-auto mb-4">
+              <div className="mx-auto mb-4 text-[#111823]">
                 <svg
                   className="w-8 h-8 mx-auto"
                   fill="none"

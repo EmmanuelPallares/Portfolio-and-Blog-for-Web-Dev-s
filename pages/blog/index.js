@@ -84,7 +84,7 @@ export default function Index(blogs) {
           </div>
           <div className="text-center">
             <Link href="/blog">
-              <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded">
+              <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-[#111823] rounded">
                 Show all posts
               </a>
             </Link>
