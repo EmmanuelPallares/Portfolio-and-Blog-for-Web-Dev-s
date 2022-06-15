@@ -5,6 +5,15 @@ const LatestBlog = (latestblogs) => {
   console.log(LATESTBLOGSPROPS);
   return (
     <div className="py-20 container">
+      <div className="flex mb-12">
+        <h2
+          className="p-3 text-3xl lg:text-4xl font-bold font-heading  wow animate__animated animate__fadeIn grow h-14 text-center "
+          data-wow-delay=".1s"
+        >
+          Latest <span className="text-[#E93D44]">BlogPosts</span>
+        </h2>
+      </div>
+      <div className="w-full lg:w-1/2 px-8"></div>
       {LATESTBLOGSPROPS.map(({ title, coverImage, slug, content, excerpt }) => (
         <div className="flex flex-wrap -mx-4 mb-12 wow animate__animated animate__fadeIn animated hover-up-5">
           <div className="w-full lg:w-1/2 px-4 lg:pr-20 lg:pt-4 order-1 lg:order-0">
