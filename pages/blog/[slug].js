@@ -1,32 +1,33 @@
-import { getEachSeoBlog, getSeosProps } from "../../lib/data";
+import { getBlogItem, getBlogSlugs } from "../../lib/data";
 
 export const getStaticPaths = async () => {
-  const seoRes = await getSeosProps();
-  const seos = seoRes.blogPosts;
+  const slugsRes = await getBlogSlugs();
+  const slugs = slugsRes.blogPosts;
 
   return {
-    paths: seos.map((seo) => ({ params: { seo: seo.seo } })),
+    paths: slugs.map((slug) => ({ params: { slug: slug.slug } })),
     fallback: false,
   };
 };
 export const getStaticProps = async ({ params }) => {
-  const seoItem = await getEachSeoBlog(params.seo);
+  const blogItem = await getBlogItem(params.slug);
   return {
     props: {
-      seoItem: seoItem.blogPosts[0],
+      blogItem: blogItem.blogPosts[0],
     },
   };
 };
 
-const Post = ({ seoItem }) => {
+const Home = ({ blogItem }) => {
+  console.log(blogItem);
   return (
     <div>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
-        <h1 className="text-6xl text-gray-900 font-bold">{title}</h1>
-        <h1 className="text-6xl text-gray-900 font-bold">{seoItem}</h1>
+        <h1 className="text-6xl text-gray-900 font-bold">{blogItem.title}</h1>
+        <h1 className="text-6xl text-gray-900 font-bold"></h1>
       </div>
     </div>
   );
 };
 
-export default Post;
+export default Home;

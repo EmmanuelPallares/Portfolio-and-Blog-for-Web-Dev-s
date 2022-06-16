@@ -18,7 +18,8 @@ export const getStaticProps = async ({ params }) => {
     },
   };
 };
-export default function Home({ portfolioItem, content, seo }) {
+export default function Home({ portfolioItem }) {
+  console.log(portfolioItem);
   return (
     <div>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">

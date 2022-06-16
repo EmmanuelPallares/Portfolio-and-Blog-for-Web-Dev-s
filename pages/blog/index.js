@@ -44,7 +44,16 @@ export default function Index(blogs) {
           </ul>
           <div className="flex flex-wrap -mx-3">
             {ARRAYBLOGS.map(
-              ({ blog, index, title, coverImage, slug, content, excerpt }) => (
+              ({
+                blog,
+                id,
+                title,
+                coverImage,
+                slug,
+                content,
+                excerpt,
+                published,
+              }) => (
                 <div
                   className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
                   data-wow-delay=".1s"
@@ -59,7 +68,7 @@ export default function Index(blogs) {
                     </a>
                   </Link>
                   <p className="mt-6 text-sm text-blue-400">
-                    <Link href="/blog-2">
+                    <Link href={`/blog/${slug}`}>
                       <a>
                         <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
                           {slug}
@@ -67,17 +76,15 @@ export default function Index(blogs) {
                       </a>
                     </Link>
                     <span className="text-blueGray-400 text-xs">
-                      24 Jan, 2021
+                      {published}
                     </span>
                   </p>
                   <h3 className="my-2 text-2xl font-bold font-heading">
-                    <Link href="/blog-single">
-                      <a className="hover:text-blue-500">{title}</a>
+                    <Link href={`/blog/${slug}`}>
+                      <a className="hover:text-blue-500">{id}</a>
                     </Link>
                   </h3>
-                  <p className="text-blueGray-400 leading-loose">
-                    {title + slug}
-                  </p>
+                  <p className="text-blueGray-400 leading-loose">{excerpt}</p>
                 </div>
               )
             )}
