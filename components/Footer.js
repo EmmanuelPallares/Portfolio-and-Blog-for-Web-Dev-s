@@ -25,13 +25,18 @@ const Footer = () => {
                 digitization
               </p>
             </div>
-            <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
-              <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
-                Languages
+            <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0 font-bold">
+              <p className="mb-2 lg:mb-4 lg:text-lg  font-heading text-blueGray-800">
+                Quick Links
               </p>
-              <p className="lg:text-lg text-blueGray-400">
-                English and Spanish
-              </p>
+              <Link href="/brand">
+                <p className="lg:text-lg underline underline-offset-2">Brand</p>
+              </Link>
+              <Link href="/faqs">
+                <p className="lg:text-lg underline underline-offset-2">
+                  Frequently Asked Questions
+                </p>
+              </Link>
             </div>
             <div className="w-full lg:w-1/5 px-3">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
