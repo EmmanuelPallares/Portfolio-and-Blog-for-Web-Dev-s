@@ -10,7 +10,6 @@ export const getStaticProps = async () => {
 };
 export default function Index(blogs) {
   const ARRAYBLOGS = blogs.props.blogPosts;
-  // console.log(ARRAYBLOGS);
 
   return (
     <>
