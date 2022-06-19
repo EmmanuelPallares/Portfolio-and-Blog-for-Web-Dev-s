@@ -11,12 +11,11 @@ export const getStaticProps = async () => {
   };
 };
 
-
-
 export default function Index(latestblogs, seoItem) {
   console.log(seoItem);
   return (
     <>
+      <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
       <Hero />
       <BussinesSolution />
       <WhyUs />

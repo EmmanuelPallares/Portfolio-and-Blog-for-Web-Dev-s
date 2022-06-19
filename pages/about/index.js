@@ -1,12 +1,14 @@
 import React from "react";
+import WhoIm from "../../components/WhoIm";
+import AboutLine from "../../components/AboutLine";
 
-
-const AboutPage = () => {
+const Home = () => {
   return (
-    <div className="md-mx-12 mb-auto p-6 mx-6 container text-6xl text-green-800">
-      About Page
-    </div>
+    <>
+      <WhoIm />
+      <AboutLine />
+    </>
   );
 };
 
-export default AboutPage;
+export default Home;
