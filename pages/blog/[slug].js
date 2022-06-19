@@ -71,10 +71,6 @@ const Home = ({ blogItem, VITOZAUTHOR, source }) => {
       </div>
       <div className="container">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-6 leading-loose text-blueGray-400">
-            {/* {blogItem.content} */}
-          </p>
-
           <p
             className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn animated"
             data-wow-delay=".1s"
