@@ -60,7 +60,7 @@ export default function Index(blogs) {
                   <a>
                     <img
                       className="h-80 w-full object-cover rounded"
-                      src={coverImage.url}
+                      src=""
                       alt="Monst"
                     />
                   </a>
@@ -77,7 +77,7 @@ export default function Index(blogs) {
                 </p>
                 <h3 className="my-2 text-2xl font-bold font-heading">
                   <Link href={`/blog/${slug}`}>
-                    <a className="hover:text-blue-500">{id}</a>
+                    <a className="hover:text-blue-500">{title}</a>
                   </Link>
                 </h3>
                 <p className="text-blueGray-400 leading-loose">{excerpt}</p>
@@ -88,7 +88,7 @@ export default function Index(blogs) {
         <div className="text-center">
           <Link href="/blog">
             <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-[#111823] rounded">
-              Show all posts
+              Back to Home
             </a>
           </Link>
         </div>

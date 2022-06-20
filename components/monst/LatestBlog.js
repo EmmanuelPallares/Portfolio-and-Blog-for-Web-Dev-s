@@ -57,7 +57,7 @@ const LatestBlog = (latestblogs) => {
               <a>
                 <img
                   className="h-80 w-full object-cover rounded"
-                  src={coverImage.url}
+                  src=""
                   alt="props image"
                 />
               </a>

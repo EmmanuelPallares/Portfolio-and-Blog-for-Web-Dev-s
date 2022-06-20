@@ -1,4 +1,4 @@
-import { getLatestBlogProps, getEachSeoBlog, getSeosProps } from "../lib/data";
+import { getLatestBlogProps } from "../lib/data";
 import Hero from "../components/monst/Hero";
 import LatestBlogs from "../components/monst/LatestBlog";
 import BussinesSolution from "../components/monst/BussinesSolution";
@@ -11,8 +11,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Index(latestblogs, seoItem) {
-  console.log(seoItem);
+export default function Index(latestblogs) {
   return (
     <>
       <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
