@@ -45,11 +45,7 @@ export async function getBlogProps() {
         }
         id
         slug
-        richText {
-          raw
-          text
-          html
-        }
+        fillRule
         published
       }
     }
@@ -167,11 +163,7 @@ export async function getLatestBlogProps() {
         }
         id
         slug
-        richText {
-          raw
-          text
-          html
-        }
+        fillRule
       }
     }
   `;
@@ -209,7 +201,7 @@ export async function getFaqsProps() {
     query {
       faqcks {
         title
-        content
+        fillRule
       }
     }
   `;

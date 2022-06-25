@@ -1,9 +1,7 @@
 import { getBlogItem, getBlogSlugs, getVitozDevAuthor } from "../../lib/data";
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemote } from "next-mdx-remote";
-import Quote from "../../components/monst/Quote";
+import { RichText } from "@graphcms/rich-text-react-renderer";
+
 import Link from "next/link";
-const components = { Quote };
 
 export const getStaticPaths = async () => {
   const slugsRes = await getBlogSlugs();
@@ -16,7 +14,6 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async ({ params }) => {
   const blogItem = await getBlogItem(params.slug);
-  const mdxSource = await serialize(blogItem.content);
 
   const AUTHOR = await getVitozDevAuthor();
   const VITOZAUTHOR = AUTHOR.props.author;
@@ -25,12 +22,12 @@ export const getStaticProps = async ({ params }) => {
     props: {
       blogItem: blogItem.blogPosts[0],
       VITOZAUTHOR,
-      source: mdxSource,
     },
   };
 };
 
-const Home = ({ blogItem, VITOZAUTHOR, source }) => {
+const Home = ({ blogItem, VITOZAUTHOR }) => {
+  console.log(blogItem);
   return (
     <section className="pb-20">
       <div className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat">
@@ -75,7 +72,7 @@ const Home = ({ blogItem, VITOZAUTHOR, source }) => {
             className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn animated"
             data-wow-delay=".1s"
           >
-            <MDXRemote {...source} component={Quote} />
+            <RichText content={blogItem.richText} />
           </p>
         </div>
 
