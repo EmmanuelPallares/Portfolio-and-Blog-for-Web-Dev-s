@@ -62,14 +62,14 @@ export default function Index(blogs) {
                     />
                   </a>
                 </Link>
-                <p className="mt-6 text-sm text-blue-400">
-                  <Link href={`/blog/${slug}`}>
+                <p className="mt-6 text-sm ">
+                  {/* <Link href={`/blog/${slug}`}>
                     <a>
                       <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
                         {slug}
                       </span>
                     </a>
-                  </Link>
+                  </Link> */}
                   <span className="text-blueGray-400 text-xs">{published}</span>
                 </p>
                 <h3 className="my-2 text-2xl font-bold font-heading">

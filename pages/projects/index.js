@@ -100,7 +100,7 @@ export default function Index(portfolios) {
             )
           )}
           <div className="text-center">
-            <Link href="/blog">
+            <Link href="/">
               <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-[#111823] rounded">
                 Back to Home
               </a>

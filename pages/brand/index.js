@@ -13,23 +13,16 @@ const Brand = () => {
             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">About</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                On Tuesday, November 16, 2021, we launched the refreshed
-                Wizeline brand to the world. Our brand is more than a logo. It
-                includes verbal, behavioral and cultural elements, in addition
-                to the visual ones, based on a strategic intent. Together, these
-                elements tell the story of who we are and what we stand for. The
-                Wizeline brand captures our diverse and inclusive, continuous
-                learning culture and the way we partner with our customers to
-                offer them the best solutions for their challenges. On this
-                landing page, you will find resources for applying different
-                elements of our brand easily and consistently. If you need more
-                information or have any questions, please don’t hesitate to
-                contact us.
+                On someday of week, I launch my new refreshed site with new
+                custom color bar inspired in my favorite colors at moment. On
+                this page, you will find resources for quote o legal reply. If
+                you need more information or have any questions, please don’t
+                hesitate to contact us. !
               </dd>
             </div>
             <div className="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 bg-[#E93D44] ">
               <dt className="text-sm font-medium text-gray-500 ">
-                <div className="text-white">Red Principal</div>
+                <div className="text-white">Main Red</div>
               </dt>
               <dd className="mt-1 text-sm  sm:mt-0 sm:col-span-2 text-white">
                 #E93D44
@@ -67,6 +60,11 @@ const Brand = () => {
               <dt className="text-sm font-medium">Light Gray #D3D3D4</dt>
               <dd className="mt-1 text-sm sm:mt-0 sm:col-span-2">#D3D3D4</dd>
             </div>
+            <div className="px-4 py-5 sm:px-6">
+              <h3 className="text-lg leading-6 font-medium text-gray-900">
+                Assets
+              </h3>
+            </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">Assets</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -80,7 +78,7 @@ const Brand = () => {
                     </div>
                     <div className="ml-4 flex-shrink-0">
                       <a
-                        href="#"
+                        href="https://drive.google.com/drive/folders/14DDDd4K-wSpxTXKpV1rsnVbyRaJt8tFp?usp=sharing"
                         className="font-medium text-indigo-600 hover:text-indigo-500"
                       >
                         Download
@@ -93,7 +91,7 @@ const Brand = () => {
                     </div>
                     <div className="ml-4 flex-shrink-0">
                       <a
-                        href="#"
+                        href="https://drive.google.com/drive/folders/142R3ZXvYeRrkLJ9qgJUpgmrJdC_rfTvL?usp=sharing"
                         className="font-medium text-indigo-600 hover:text-indigo-500"
                       >
                         Download
