@@ -57,7 +57,7 @@ const Brand = () => {
               <dd className="mt-1 text-sm sm:mt-0 sm:col-span-2">#4e5154</dd>
             </div>
             <div className="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 bg-[#D3D3D4] text-black">
-              <dt className="text-sm font-medium">Light Gray #D3D3D4</dt>
+              <dt className="text-sm font-medium">Light Gray</dt>
               <dd className="mt-1 text-sm sm:mt-0 sm:col-span-2">#D3D3D4</dd>
             </div>
             <div className="px-4 py-5 sm:px-6">
@@ -79,7 +79,7 @@ const Brand = () => {
                     <div className="ml-4 flex-shrink-0">
                       <a
                         href="https://drive.google.com/drive/folders/14DDDd4K-wSpxTXKpV1rsnVbyRaJt8tFp?usp=sharing"
-                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                        className="font-medium text-dark hover:text-[#4d5d6D]"
                       >
                         Download
                       </a>
@@ -92,7 +92,7 @@ const Brand = () => {
                     <div className="ml-4 flex-shrink-0">
                       <a
                         href="https://drive.google.com/drive/folders/142R3ZXvYeRrkLJ9qgJUpgmrJdC_rfTvL?usp=sharing"
-                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                        className="font-medium text-dark hover:text-[#4d5d6D]"
                       >
                         Download
                       </a>
