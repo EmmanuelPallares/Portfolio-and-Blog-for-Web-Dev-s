@@ -14,26 +14,26 @@ const LatestBlog = (latestblogs) => {
         </h2>
       </div>
       <div className="w-full lg:w-1/2 px-8"></div>
-      {LATESTBLOGSPROPS.map(({ title, coverImage, slug, content, excerpt }) => (
+      {LATESTBLOGSPROPS.map(({ title, coverImage, slug, excerpt }) => (
         <div className="flex flex-wrap -mx-4 mb-12 wow animate__animated animate__fadeIn animated hover-up-5">
           <div className="w-full lg:w-1/2 px-4 lg:pr-20 lg:pt-4 order-1 lg:order-0">
-            <Link href="/blog">
+            {/* <Link href="/blog">
               <a>
                 <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
                   tag of props
                 </span>
               </a>
-            </Link>
+            </Link> */}
             <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-              <Link href="/blog-single">
-                <a className="hover:text-blue-500">{title}</a>
+              <Link href={`/blogs/${slug}`}>
+                <a className="hover:text-[#222529]">{title}</a>
               </Link>
             </h3>
             <p className="mb-4 text-sm md:text-base leading-loose text-blueGray-400">
               {excerpt}
             </p>
-            <Link href="/blog-single">
-              <a className="text-xs font-semibold text-blue-600">
+            <Link href={`/blogs/${slug}`}>
+              <a className="text-xs font-semibold text-[#222529]">
                 <span>Read More</span>
                 <svg
                   className="inline-block w-4 h-4 ml-1"
@@ -53,12 +53,12 @@ const LatestBlog = (latestblogs) => {
             </Link>
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
-            <Link href="/blog-single">
+            <Link href={`/blogs/${slug}`}>
               <a>
                 <img
                   className="h-80 w-full object-cover rounded"
-                  src=""
-                  alt="props image"
+                  src={coverImage.url}
+                  alt="monst"
                 />
               </a>
             </Link>
