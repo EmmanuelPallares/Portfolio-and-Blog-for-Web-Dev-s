@@ -72,7 +72,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
             className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn animated"
             data-wow-delay=".1s"
           >
-            <RichText content={blogItem.richText} />
+            <RichText content={blogItem.richText.raw.children} />
           </p>
         </div>
 
