@@ -29,7 +29,7 @@ const LatestBlog = (latestblogs) => {
                 <a className="hover:text-[#222529]">{title}</a>
               </Link>
             </h3>
-            <p className="mb-4 text-sm md:text-base leading-loose text-blueGray-400">
+            <p className="mb-4 text-sm md:text-base leading-loose ">
               {excerpt}
             </p>
             <Link href={`/blogs/${slug}`}>
