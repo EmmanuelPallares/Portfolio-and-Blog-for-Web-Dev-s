@@ -74,7 +74,7 @@ export default function Index(blogs) {
                 </p>
                 <h3 className="my-2 text-2xl font-bold font-heading">
                   <Link href={`/blog/${slug}`}>
-                    <a className="hover:text-blue-500">{title}</a>
+                    <a className="hover:text-gray-500">{title}</a>
                   </Link>
                 </h3>
                 <p className="text-blueGray-400 leading-loose">{excerpt}</p>

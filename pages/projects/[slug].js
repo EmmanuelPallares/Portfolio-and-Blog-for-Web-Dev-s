@@ -28,7 +28,7 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 export default function Home({ portfolioItem, VITOZAUTHOR }) {
-  console.log(portfolioItem);
+  console.log(VITOZAUTHOR);
   return (
     <div>
       <div>

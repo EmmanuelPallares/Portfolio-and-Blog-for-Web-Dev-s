@@ -25,14 +25,14 @@ const LatestBlog = (latestblogs) => {
               </a>
             </Link> */}
             <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-              <Link href={`/blogs/${slug}`}>
+              <Link href={`/blog/${slug}`}>
                 <a className="hover:text-[#222529]">{title}</a>
               </Link>
             </h3>
             <p className="mb-4 text-sm md:text-base leading-loose ">
               {excerpt}
             </p>
-            <Link href={`/blogs/${slug}`}>
+            <Link href={`/blog/${slug}`}>
               <a className="text-xs font-semibold text-[#222529]">
                 <span>Read More</span>
                 <svg
@@ -53,7 +53,7 @@ const LatestBlog = (latestblogs) => {
             </Link>
           </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
-            <Link href={`/blogs/${slug}`}>
+            <Link href={`/blog/${slug}`}>
               <a>
                 <img
                   className="h-80 w-full object-cover rounded"
