@@ -5,14 +5,21 @@ const AboutLine = () => {
     <section className="py-20" id="how-we-work">
       <div className="container">
         <div className="flex flex-wrap -mx-8">
-          <div className="w-full lg:w-1/2 px-8">
-            <div className="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
-              <h2
-                className="mb-4 text-3xl lg:text-4xl font-bold font-heading max-w-md wow animate__animated animate__fadeIn"
-                data-wow-delay=".1s"
-              >
-                {`Who I am  ¯\_(ツ)_/¯`}
-              </h2>
+          <div className="w-full lg:w-1 px-8">
+            <div className="mb-12 lg:mb-0 pb-12 py-10 lg:pb-0 border-b lg:border-b-0 bg-white shadow rounded">
+              <div className="flex items-center mb-4">
+                <img
+                  className="h-16 w-16 rounded-full object-cover"
+                  src="https://media.graphassets.com/qpGRqMdSSayRediLU6bg"
+                  alt="Monst"
+                />
+                <div className="pl-4">
+                  <strong className="mt-6 mb-2 text-md">
+                    Emmanuel Pallares Prieto
+                  </strong>
+                  <p className="text-gray-500 text-xs mt-3">Admin</p>
+                </div>
+              </div>
               <p
                 className="mb-8 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn select-none"
                 data-wow-delay=".3s"
@@ -47,6 +54,7 @@ const AboutLine = () => {
               </p>
             </div>
           </div>
+
           <div className="w-full lg:w-1/2 px-8">
             <h2
               className="mb-4 text-3xl lg:text-4xl font-bold font-heading max-w-md wow animate__animated animate__fadeIn"
@@ -60,15 +68,17 @@ const AboutLine = () => {
                 data-wow-delay=".3s"
               >
                 <div className="px-4">
+                  <br className="underline " />
                   <span className="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600">
                     🌍
                   </span>
                 </div>
                 <div className="px-4">
                   <h3 className="my-4 text-xl font-semibold">vitoz.dev</h3>
+                  <span className="text-blueGray-400 text-xs">23/06/2022</span>
                   <p className="text-blueGray-400 leading-loose">
                     Launching finally my website for all the world so happy for
-                    that
+                    that and I'm proud of it.
                   </p>
                 </div>
               </li>
@@ -85,8 +95,14 @@ const AboutLine = () => {
                   <h3 className="my-4 text-xl font-semibold">
                     New work at Finvero
                   </h3>
+                  <span className="text-blueGray-400 text-xs">13/03/2022</span>
+
                   <p className="text-blueGray-400 leading-loose">
-                    I was hired by Finvero to work on a new project
+                    I was hired by Finvero to work on a new project. Finance
+                    Skills !!!
+                  </p>
+                  <p className="text-blueGray-400 leading-loose">
+                    Titulation for UVEG process to...
                   </p>
                 </div>
               </li>

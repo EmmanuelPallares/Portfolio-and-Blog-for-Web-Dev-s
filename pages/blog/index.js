@@ -19,7 +19,7 @@ export default function Index(blogs) {
         </h1>
         <ul className="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__animated animate__fadeIn animated">
           <li className="inline-flex items-center">
-            <a href="/" className="hover:text-blue-500 text-gray-800">
+            <a href="/" className="hover:text-gray-500 text-gray-800">
               Home
             </a>
             <svg
@@ -35,7 +35,7 @@ export default function Index(blogs) {
             </svg>
           </li>
           <li className="inline-flex items-center">
-            <a href="/blog" className="hover:text-blue-500 text-gray-800">
+            <a href="/blog" className="hover:text-gray-500 text-gray-800">
               Blog
             </a>
           </li>
@@ -83,7 +83,7 @@ export default function Index(blogs) {
           )}
         </div>
         <div className="text-center">
-          <Link href="/blog">
+          <Link href="/">
             <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-[#111823] rounded">
               Back to Home
             </a>

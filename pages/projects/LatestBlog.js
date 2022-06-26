@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const LatestBlog = (latestblogs) => {
   const LATESTBLOGSPROPS = latestblogs.props.props.blogPosts;
-  // console.log(LATESTBLOGSPROPS);
+  // fillRule(LATESTBLOGSPROPS);
   return (
     <div className="py-20 container">
       <div className="flex mb-12">

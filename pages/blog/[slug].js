@@ -1,9 +1,8 @@
 import { getBlogItem, getBlogSlugs, getVitozDevAuthor } from "../../lib/data";
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import Head from "next/head";
 
 import Link from "next/link";
-
+import Head from "next/head";
 export const getStaticPaths = async () => {
   const slugsRes = await getBlogSlugs();
   const slugs = slugsRes.blogPosts;
@@ -28,7 +27,6 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const Home = ({ blogItem, VITOZAUTHOR }) => {
-  console.log(blogItem);
   return (
     <div>
       <Head>

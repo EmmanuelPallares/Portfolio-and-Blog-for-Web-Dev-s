@@ -5,7 +5,8 @@ import AboutLine from "../../components/AboutLine";
 const Home = () => {
   return (
     <>
-      <WhoIm />
+      {/* <WhoIm /> */}
+     
       <AboutLine />
     </>
   );
