@@ -1,17 +1,18 @@
 import React from "react";
 import Head from "next/head";
-import Script from "next/script";
+
 import "../public/assets/css/tailwind-built.css";
 import "../styles/globals.css";
 import "../public/assets/css/animate.min.css";
 import "swiper/css";
+import "animate.css";
 import Layout from "./../components/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <Script
+        {/* <Script
           src="../public/assets/vendor/counterup"
           type="javascript"
         ></Script>
@@ -25,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         <Script src="../public/assets/vendor/textType"></Script>
         <Script src="../public/assets/vendor/waypoints"></Script>
         <Script src="../public/assets/vendor/wow"></Script>
-        <Script src="../public/assets/main"></Script>
+        <Script src="../public/assets/main"></Script> */}
       </Head>
       <Layout>
         <Component {...pageProps} />

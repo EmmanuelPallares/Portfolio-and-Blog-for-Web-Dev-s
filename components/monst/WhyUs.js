@@ -10,25 +10,25 @@ const WhyUs = () => {
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-1/2">
             <div
-              className="lg:py-6 lg:pr-77 wow animate__animated animate__fadeIn"
+              className="lg:py-6 lg:pr-77 wow animate__animated animate__heartBeat"
               data-wow-delay=".3s"
             >
               <div className="mb-4">
                 <span
-                  className="text-xs py-1 px-3  font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
-                  data-wow-delay=".9s"
+                  className="text-xs py-1 px-3  font-semibold bg-blue-50 rounded-xl wow animate__animated animate__swing"
+                  data-wow-delay="0"
                 >
                   {`Why choose us`}
                 </span>
                 <h2
-                  className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
+                  className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__heartBeat"
                   data-wow-delay=".3s"
                 >
                   {`Exclusive features`}
                 </h2>
               </div>
               <div
-                className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                className="flex items-start py-4 wow animate__animated animate__heartBeat"
                 data-wow-delay=".5s"
               >
                 <div className="w-8 mr-5 ">
@@ -57,7 +57,7 @@ const WhyUs = () => {
                 </div>
               </div>
               <div
-                className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                className="flex items-start py-4 wow animate__animated animate__heartBeat"
                 data-wow-delay=".7s"
               >
                 <div className="w-8 mr-5 ">
@@ -93,7 +93,7 @@ const WhyUs = () => {
                 </div>
               </div>
               <div
-                className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                className="flex items-start py-4 wow animate__animated animate__heartBeat"
                 data-wow-delay=".9s"
               >
                 <div className="w-8 mr-5 ">
@@ -125,7 +125,7 @@ const WhyUs = () => {
           </div>
           <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
             <div
-              className="wow animate__animated animate__fadeIn"
+              className="wow animate__animated animate__heartBeat"
               data-wow-delay=".5s"
             >
               <video width="100%" controls>
