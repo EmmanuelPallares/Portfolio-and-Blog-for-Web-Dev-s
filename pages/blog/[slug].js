@@ -1,9 +1,8 @@
 import { getBlogItem, getBlogSlugs, getVitozDevAuthor } from "../../lib/data";
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import { useEffect } from "react";
+import { Children, useEffect } from "react";
 import Prism from "prismjs";
 import Image from "next/image";
-
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-jsx";
@@ -40,18 +39,12 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
   return (
     <div>
       <Head>
-        <link
-          href="https://{{cdn}}/prismjs@v1.x/themes/prism.css"
-          rel="stylesheet"
-        />
         <title>{blogItem.seo.title}</title>
         <meta name="description" content={blogItem.seo.description} />
         <meta property="og:title" content={blogItem.seo.title} />
         <meta property="og:description" content={blogItem.seo.description} />
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="website" />
-        <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
-        <script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
       </Head>
       <section className="pb-20">
         <div className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat">
@@ -100,23 +93,25 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                 content={blogItem.richText.raw.children}
                 renderers={{
                   h1: ({ children }) => (
-                    <h1 className="text-red-800 text-3xl">{children}</h1>
+                    <h1 className="text-blueGray-800 text-3xl text-center wow">
+                      {children}
+                    </h1>
                   ),
                   bold: ({ children }) => (
                     <strong className="text-blueGray-900">{children}</strong>
                   ),
                   img: ({ src, altText, height, width }) => (
-                    <Image
-                      src={src}
-                      alt={altText}
-                      height={height}
-                      width={width}
-                      objectFit="cover"
-                      className="my-11"
-                    />
+                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 container mt-6 mb-6 p-3">
+                      <Image
+                        src={src}
+                        alt={altText}
+                        height={height}
+                        width={width}
+                      />
+                    </div>
                   ),
                   code_block: ({ children }) => (
-                    <code class="language-jsx">{children}</code>
+                    <code class="line-numbers language-jsx">{children}</code>
                   ),
                 }}
               />
