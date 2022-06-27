@@ -115,12 +115,12 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                   data-wow-delay=".1s"
                 >
                   <div className="flex items-center mb-4">
-                    <Image
-                      className="h-16 w-16 rounded-full object-cover"
+                    {/* <Image
                       src={VITOZAUTHOR.userImage.url}
                       width={VITOZAUTHOR.userImage.width}
                       height={VITOZAUTHOR.userImage.height}
-                    />
+                      layout="fill"
+                    /> */}
                     <div className="pl-4">
                       <strong className="mt-6 mb-1 text-md">
                         {VITOZAUTHOR.name}
@@ -133,7 +133,6 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                   </p>
                   <a
                     href="https://twitter.com/EPallaresDev"
-                  
                     className="inline-flex items-center text-gray-600 dark:text-gray-200 hover:underline mt-8"
                   >
                     <svg viewBox="0 0 512 512" className="w-6 h-6 fill-current">
