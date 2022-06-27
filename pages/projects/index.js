@@ -20,25 +20,28 @@ export default function Index(portfolios) {
           </h1>
           <ul className="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__animated animate__fadeIn animated">
             <li className="inline-flex items-center">
-              <a href="/" className="hover:text-gray-500 text-gray-800">
+              <Link href="/" className="hover:text-gray-500 text-gray-800">
                 Home
-              </a>
+              </Link>
               <svg
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 className="h-5 w-auto text-gray-300"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </li>
             <li className="inline-flex items-center">
-              <a href="/projects" className="hover:text-gray-500 text-gray-800">
+              <Link
+                href="/projects"
+                className="hover:text-gray-500 text-gray-800"
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             {/* <li className="inline-flex items-center text-gray-400">
               <span>Web Development</span>
@@ -74,9 +77,9 @@ export default function Index(portfolios) {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         ></path>
                       </svg>

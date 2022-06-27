@@ -2,14 +2,12 @@ import React from "react";
 import WhoIm from "../../components/WhoIm";
 import AboutLine from "../../components/AboutLine";
 
-const Home = () => {
+const Index = () => {
   return (
     <>
-      {/* <WhoIm /> */}
-     
-      <AboutLine />
+      <WhoIm />
     </>
   );
 };
 
-export default Home;
+export default Index;

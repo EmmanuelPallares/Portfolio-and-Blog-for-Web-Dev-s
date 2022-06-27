@@ -54,7 +54,7 @@ const Footer = () => {
               <a
                 className="text-[#E93D44]"
                 href="https://vitoz.dev"
-                target="_blank"
+              
               >
                 {" "}
                 <br />

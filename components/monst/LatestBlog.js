@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const LatestBlog = (latestblogs) => {
   const LATESTBLOGSPROPS = latestblogs.props.props.blogPosts;
-  // console.log(LATESTBLOGSPROPS);
+
   return (
     <div className="py-20 container">
       <div className="flex mb-12">
@@ -15,7 +16,10 @@ const LatestBlog = (latestblogs) => {
       </div>
       <div className="w-full lg:w-1/2 px-8"></div>
       {LATESTBLOGSPROPS.map(({ title, coverImage, slug, excerpt }) => (
-        <div className="flex flex-wrap -mx-4 mb-12 wow animate__animated animate__fadeIn animated hover-up-5">
+        <div
+          className="flex flex-wrap -mx-4 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
+          key={title}
+        >
           <div className="w-full lg:w-1/2 px-4 lg:pr-20 lg:pt-4 order-1 lg:order-0">
             {/* <Link href="/blog">
               <a>
@@ -43,9 +47,9 @@ const LatestBlog = (latestblogs) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>
@@ -55,10 +59,12 @@ const LatestBlog = (latestblogs) => {
           <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
             <Link href={`/blog/${slug}`}>
               <a>
-                <img
+                <Image
                   className="h-80 w-full object-cover rounded"
                   src={coverImage.url}
                   alt="monst"
+                  width={coverImage.width}
+                  height={coverImage.height}
                 />
               </a>
             </Link>

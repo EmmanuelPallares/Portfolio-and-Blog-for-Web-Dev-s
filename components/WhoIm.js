@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WhoIm = () => {
   return (
@@ -10,18 +11,19 @@ const WhoIm = () => {
             data-wow-delay=".1s"
           >
             <div className="absolute top-0 right-0 h-full w-full mt-6 -mr-6 bg-blueGray-100 rounded-xl"></div>
-            <img
+            {/* <Image
               className="absolute top-0 right-0 h-full w-full rounded-xl object-cover object-top"
               src="/assets/imgs/placeholders/img-1.png"
               alt="Monst"
-            />
+            /> */}
           </div>
           <div className="w-full lg:w-1/2 lg:pl-24 my-auto">
-            <img
+            <Image
               src="/assets/imgs/icons/quote.svg"
               alt="Monst"
               className="wow animate__animated animate__fadeIn"
               data-wow-delay=".2s"
+              layout="fill"
             />
             <h2
               className="my-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"

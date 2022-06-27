@@ -29,6 +29,7 @@ const Home = (faqs) => {
                   <Disclosure
                     as="div"
                     className="leading-loose text-lg mt-6 wow animate__animated animate__fadeIn"
+                    key={title}
                   >
                     {({ open }) => (
                       <>
