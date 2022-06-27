@@ -1,5 +1,11 @@
 import { getBlogItem, getBlogSlugs, getVitozDevAuthor } from "../../lib/data";
 import { RichText } from "@graphcms/rich-text-react-renderer";
+import { useEffect } from "react";
+import Prism from "prismjs";
+
+import "prismjs/components/prism-javascript";
+import "prismjs/components/prism-css";
+import "prismjs/components/prism-jsx";
 
 import Link from "next/link";
 import Head from "next/head";
@@ -27,15 +33,24 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const Home = ({ blogItem, VITOZAUTHOR }) => {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
   return (
     <div>
       <Head>
+        <link
+          href="https://{{cdn}}/prismjs@v1.x/themes/prism.css"
+          rel="stylesheet"
+        />
         <title>{blogItem.seo.title}</title>
         <meta name="description" content={blogItem.seo.description} />
         <meta property="og:title" content={blogItem.seo.title} />
         <meta property="og:description" content={blogItem.seo.description} />
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="website" />
+        <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+        <script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
       </Head>
       <section className="pb-20">
         <div className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat">
@@ -77,22 +92,27 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
         <div className="container">
           <div className="max-w-2xl mx-auto">
             <p
-              className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn animated"
+              className="mb-6 leading-loose text-blueGray-800 wow animate__animated animate__fadeIn animated"
               data-wow-delay=".1s"
             >
-              <RichText content={blogItem.richText.raw.children} />
+              <RichText
+                content={blogItem.richText.raw.children}
+                renderers={{
+                  h1: ({ children }) => (
+                    <h1 className="text-red-800 text-3xl">{children}</h1>
+                  ),
+                  bold: ({ children }) => (
+                    <strong className="text-blueGray-900">{children}</strong>
+                  ),
+                  image: ({ children }) => (
+                    <div className="mb-3">{children}</div>
+                  ),
+                  code_block: ({ children }) => (
+                    <code class="language-javascript">{children}</code>
+                  ),
+                }}
+              />
             </p>
-          </div>
-
-          <div
-            className="pt-40 pb-40 mb-12 bg-cover bg-no-repeat bg-center rounded-xl"
-            style={{
-              backgroundImage: "url(`${blogItem.coverImage.url}`)",
-            }}
-          >
-            <div className="max-w-2xl mx-auto">
-              <div className="text-center mb-6"></div>
-            </div>
           </div>
 
           <div className="max-w-2xl mx-auto">

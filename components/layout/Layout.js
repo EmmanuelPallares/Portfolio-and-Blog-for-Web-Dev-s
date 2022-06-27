@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
         <Footer />
         <BackToTop />
       </div>
+    
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-
+import "../styles/prism.css";
 import "../public/assets/css/tailwind-built.css";
 import "../styles/globals.css";
 import "../public/assets/css/animate.min.css";

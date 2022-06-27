@@ -46,3 +46,8 @@ https://www.dawsoncodes.com/posts/2/syntax-highlighting-with-prism-and-nextjs
 Linux commands sheet
 wsl from powershell for change terminal
 and then write /mnt/c for change the current directory
+
+Custom rich text renderers
+https://graphcms.com/blog/graphcms-react-rich-text-renderer
+https://www.dawsoncodes.com/posts/2/syntax-highlighting-with-prism-and-nextjs
+https://www.npmjs.com/package/@graphcms/rich-text-react-renderer
