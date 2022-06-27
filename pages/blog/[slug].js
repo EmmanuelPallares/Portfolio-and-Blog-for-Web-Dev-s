@@ -2,6 +2,7 @@ import { getBlogItem, getBlogSlugs, getVitozDevAuthor } from "../../lib/data";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import { useEffect } from "react";
 import Prism from "prismjs";
+import Image from "next/image";
 
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
@@ -104,11 +105,18 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                   bold: ({ children }) => (
                     <strong className="text-blueGray-900">{children}</strong>
                   ),
-                  image: ({ children }) => (
-                    <div className="mb-3">{children}</div>
+                  img: ({ src, altText, height, width }) => (
+                    <Image
+                      src={src}
+                      alt={altText}
+                      height={height}
+                      width={width}
+                      objectFit="cover"
+                      className="my-11"
+                    />
                   ),
                   code_block: ({ children }) => (
-                    <code class="language-javascript">{children}</code>
+                    <code class="language-jsx">{children}</code>
                   ),
                 }}
               />
