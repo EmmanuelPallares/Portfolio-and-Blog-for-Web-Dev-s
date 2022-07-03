@@ -28,7 +28,6 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 export default function Home({ portfolioItem, VITOZAUTHOR }) {
-  console.log(VITOZAUTHOR);
   return (
     <div>
       <div>
@@ -127,7 +126,6 @@ export default function Home({ portfolioItem, VITOZAUTHOR }) {
                   </p>
                   <a
                     href="https://twitter.com/EPallaresDev"
-       
                     className="inline-flex items-center text-gray-600 dark:text-gray-200 hover:underline mt-8"
                   >
                     <svg viewBox="0 0 512 512" className="w-6 h-6 fill-current">
