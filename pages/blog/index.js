@@ -15,7 +15,7 @@ export default function Index(blogs) {
     <section className="py-20">
       <div className="container">
         <h1 className="text-2xl lg:text-5xl font-bold mb-5 wow animate__animated animate__fadeIn animated">
-          Blog's and News
+          Blogs and News
         </h1>
         <ul className="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__animated animate__fadeIn animated">
           <li className="inline-flex items-center">

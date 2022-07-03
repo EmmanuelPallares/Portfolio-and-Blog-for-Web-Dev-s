@@ -112,7 +112,7 @@ export default function Home({ portfolioItem, VITOZAUTHOR }) {
                     <img
                       className="h-16 w-16 rounded-full object-cover"
                       src={VITOZAUTHOR.userImage.url}
-                      alt=""
+                      alt="lol"
                     />
                     <div className="pl-4">
                       <strong className="mt-6 mb-1 text-md">
