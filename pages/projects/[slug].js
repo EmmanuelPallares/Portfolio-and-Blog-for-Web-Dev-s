@@ -67,7 +67,7 @@ export default function Home({ portfolioItem, VITOZAUTHOR }) {
               <div className="flex justify-center mb-8">
                 <img
                   src={VITOZAUTHOR.userImage.url}
-                  alt="Monst"
+                  alt=""
                   className="w-12 h-12 object-cover rounded-full"
                 />
                 <div className="pl-4">
@@ -112,7 +112,7 @@ export default function Home({ portfolioItem, VITOZAUTHOR }) {
                     <img
                       className="h-16 w-16 rounded-full object-cover"
                       src={VITOZAUTHOR.userImage.url}
-                      alt="Monst"
+                      alt=""
                     />
                     <div className="pl-4">
                       <strong className="mt-6 mb-1 text-md">
