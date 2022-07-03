@@ -120,6 +120,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                       src={VITOZAUTHOR.userImage.url}
                       width={VITOZAUTHOR.userImage.width}
                       height={VITOZAUTHOR.userImage.height}
+                      alt={VITOZAUTHOR.name}
                     />
                     <div className="pl-4">
                       <strong className="mt-6 mb-1 text-md">
