@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PaypalButton = () => {
   return (
-    <div class="">
+    <div>
       <button type="button">
         <Image
           src={paypalvector}
