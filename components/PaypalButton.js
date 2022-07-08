@@ -1,19 +1,17 @@
 import React from "react";
 import paypalvector from "../assets/paypalvector.svg";
 import Image from "next/image";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const PaypalButton = () => {
+  const initialOptions = {
+    "client-id": process.env.CLIENT_ID,
+  };
   return (
-    <div>
-      <button type="button">
-        <Image
-          src={paypalvector}
-          alt="donations icon from flaticon "
-          className=""
-          width={300}
-          height={100}
-        />
-      </button>
+    <div className="py-5">
+      <PayPalScriptProvider options={initialOptions}>
+        <PayPalButtons />
+      </PayPalScriptProvider>
     </div>
   );
 };
