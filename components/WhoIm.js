@@ -12,7 +12,7 @@ const WhoIm = () => {
           >
             <div className="absolute top-0 right-0 h-full w-full mt-6 -mr-6 bg-blueGray-100 rounded-xl"></div>
             <Image
-              className="absolute top-0 right-0 h-full w-full rounded-xl object-cover object-top bg-red-500"
+              className="absolute top-0 right-0 h-full w-full rounded-xl object-cover object-top "
               src="https://media.graphassets.com/DzgUbj7vQqu0reqhUqlL"
               alt="Monst"
               layout="fill"
