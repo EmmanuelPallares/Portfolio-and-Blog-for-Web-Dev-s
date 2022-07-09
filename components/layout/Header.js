@@ -58,7 +58,7 @@ const Header = ({ handleHidden }) => {
                 </Link>
               </li>
               <li className="group relative pt-4 pb-4 has-child">
-                <Link href="/about">
+                <Link href="#">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                     About
                   </a>
