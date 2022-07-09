@@ -12,6 +12,8 @@
     "@graphcms/rich-text-react-renderer": "^0.5.0",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
+    "@paypal/react-paypal-js": "^7.8.1",
+    "@react-icons/all-files": "^4.1.0",
     "animate.css": "^4.1.1",
     "graphql": "^16.5.0",
     "graphql-request": "^4.2.0",
@@ -27,6 +29,7 @@
     "react-visibility-sensor": "^5.1.1",
     "react-wow": "^1.0.0",
     "swiper": "^7.3.2",
+    "vercel": "^26.0.0",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   },

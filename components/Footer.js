@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import newlogo from "../assets/newlogo.svg";
+import PaypalButton from "./PaypalButton";
 
 const Footer = () => {
   return (
@@ -21,10 +22,12 @@ const Footer = () => {
             </div>
             <div className="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
               <p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
-                Helping you <strong>maximize</strong> operations management with
-                digitization
+                For research and investment, you can <strong>support</strong> my
+                projects via <strong>paypal.</strong>
               </p>
+              <PaypalButton />
             </div>
+
             <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0 font-bold">
               <p className="mb-2 lg:mb-4 lg:text-lg  font-heading text-blueGray-800">
                 Quick Links
@@ -40,7 +43,7 @@ const Footer = () => {
             </div>
             <div className="w-full lg:w-1/5 px-3">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
-                E-mail
+                e-mail
               </p>
 
               <p className="lg:text-lg text-blueGray-400">
@@ -51,11 +54,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center lg:justify-between">
             <p className="text-sm text-[#111823]">
               &copy; 2022. All rights reserved.
-              <a
-                className="text-[#E93D44]"
-                href="https://vitoz.dev"
-              
-              >
+              <a className="text-[#E93D44]" href="https://vitoz.dev">
                 {" "}
                 <br />
                 vitoz.dev
