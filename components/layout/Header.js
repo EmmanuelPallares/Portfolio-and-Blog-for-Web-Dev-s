@@ -4,6 +4,7 @@ import React from "react";
 import newlogo from "../../assets/newlogo.svg";
 
 import { useState, useEffect } from "react";
+import TopBanner from "../TopBanner";
 
 const Header = ({ handleHidden }) => {
   const [scroll, setScroll] = useState(0);
@@ -17,6 +18,7 @@ const Header = ({ handleHidden }) => {
   });
   return (
     <>
+      <TopBanner />
       <header
         className={
           scroll
