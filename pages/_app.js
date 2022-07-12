@@ -12,10 +12,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        strategy="lazyOnload"
+        id="1analitycs"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script strategy="lazyOnload">
+      <Script strategy="afterInteractive" id="2analitycs">
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
