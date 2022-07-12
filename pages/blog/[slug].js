@@ -45,6 +45,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
         <meta property="og:description" content={blogItem.seo.description} />
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={blogItem.seo.image.url} />
       </Head>
       <section className="pb-20">
         <div className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat">
@@ -84,6 +85,11 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                       {children}
                     </h1>
                   ),
+                  h2: ({ children }) => (
+                    <h1 className="my-12 text-blueGray-800 text-3xl text-center wow">
+                      {children}
+                    </h1>
+                  ),
                   bold: ({ children }) => (
                     <strong className="text-blueGray-900">{children}</strong>
                   ),
@@ -101,6 +107,15 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                     <code className="line-numbers language-jsx">
                       {children}
                     </code>
+                  ),
+                  a: ({ children, href, rel }) => (
+                    <a
+                      className="flex mt-6 mb-6 bg-green-600 hover:bg-cyan-600 text-white font-2xl rounded p-6 m-3 text-left "
+                      href={href}
+                      rel={rel || "noopener noreferrer"}
+                    >
+                      {children}
+                    </a>
                   ),
                 }}
               />

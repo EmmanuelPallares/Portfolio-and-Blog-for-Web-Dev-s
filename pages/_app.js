@@ -7,10 +7,13 @@ import "swiper/css";
 import "animate.css";
 import Layout from "./../components/layout/Layout";
 import Script from "next/script";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head></Head>
+
       <Script
         id="1analitycs"
         strategy="afterInteractive"
