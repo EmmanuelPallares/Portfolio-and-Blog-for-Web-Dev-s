@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
+import Script from "next/script";
 import Image from "next/image";
 import newlogo from "../assets/newlogo.svg";
-import PaypalButton from "./PaypalButton";
 
 const Footer = () => {
   return (
@@ -25,7 +26,6 @@ const Footer = () => {
                 For research and investment, you can <strong>support</strong> my
                 projects via <strong>paypal.</strong>
               </p>
-              <PaypalButton />
             </div>
 
             <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0 font-bold">
