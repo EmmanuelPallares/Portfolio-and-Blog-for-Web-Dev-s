@@ -31,10 +31,6 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <script
-        src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
-        charset="UTF-8"
-      ></script>
     </>
   );
 }
