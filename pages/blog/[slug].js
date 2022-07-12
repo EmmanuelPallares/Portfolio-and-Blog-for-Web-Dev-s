@@ -45,7 +45,12 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
         <meta property="og:description" content={blogItem.seo.description} />
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={blogItem.seo.image.url} />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:image"
+          src={blogItem.seo.image.url}
+          alt="Image meta seo"
+        />
       </Head>
       <section className="pb-20">
         <div className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat">
