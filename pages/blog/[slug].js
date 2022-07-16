@@ -122,8 +122,8 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                       >
                         {children}
                       </a>
-                      <div class="flex space-x-4">
-                        <div class="rounded-full bg-red-200 h-1 w-1"></div>
+                      <div className="flex space-x-4">
+                        <div className="rounded-full bg-red-200 h-1 w-1"></div>
                         {/* <div class="flex-1 space-y-6 py-1">
                             <div class="h-2 bg-slate-200 rounded"></div>
                             <div class="space-y-3">
