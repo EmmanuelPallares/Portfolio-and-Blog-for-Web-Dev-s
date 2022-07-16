@@ -91,7 +91,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                     </h1>
                   ),
                   h2: ({ children }) => (
-                    <h1 className="my-12 text-blueGray-800 text-3xl text-center wow">
+                    <h1 className="animate-bounce my-12 font-bold text-blueGray-800 text-3xl text-center wow">
                       {children}
                     </h1>
                   ),
@@ -99,7 +99,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                     <strong className="text-blueGray-900">{children}</strong>
                   ),
                   img: ({ src, altText, height, width }) => (
-                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 container mt-6 mb-6 p-3">
+                    <div className="bg-gradient-to-r mt-6 mb-6 p-3">
                       <Image
                         src={src}
                         alt={altText}
@@ -114,13 +114,28 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                     </code>
                   ),
                   a: ({ children, href, rel }) => (
-                    <a
-                      className="flex mt-6 mb-6 bg-green-600 hover:bg-cyan-600 text-white font-2xl rounded p-6 m-3 text-left "
-                      href={href}
-                      rel={rel || "noopener noreferrer"}
-                    >
-                      {children}
-                    </a>
+                    <div>
+                      <a
+                        className="hover:animate-bounce flex bg-[#203449] hover:bg-[#203449] text-white text-justify font-2xl mx-auto rounded p-6 m-3"
+                        href={href}
+                        rel={rel || "noopener noreferrer"}
+                      >
+                        {children}
+                      </a>
+                      <div class="flex space-x-4">
+                        <div class="rounded-full bg-red-200 h-1 w-1"></div>
+                        {/* <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-200 rounded"></div>
+                            <div class="space-y-3">
+                              <div class="grid grid-cols-3 gap-4">
+                                <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                              </div>
+                              <div class="h-2 bg-slate-200 rounded"></div>
+                            </div>
+                          </div> */}
+                      </div>
+                    </div>
                   ),
                 }}
               />

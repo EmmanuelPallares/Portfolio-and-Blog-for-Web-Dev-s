@@ -90,7 +90,7 @@ const Header = ({ handleHidden }) => {
               </li>
 
               <li className="pt-4 pb-4">
-                <Link href="/contact">
+                <Link href="/marketplace">
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                     MarketPlace
                   </a>
