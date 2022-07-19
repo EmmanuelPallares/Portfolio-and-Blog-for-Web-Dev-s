@@ -33,7 +33,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const Home = ({ blogItem, VITOZAUTHOR }) => {
-  console.log(blogItem.seo);
+  console.log(blogItem);
 
   useEffect(() => {
     Prism.highlightAll();
@@ -48,7 +48,7 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={blogItem.seo.image.url} />
-        <meta property="og:image:alt" content={blogItem.seo.image.alt} />
+        <meta property="og:image:alt" content={blogItem.seo.alt} />
         {/* <meta
           property="og:image:secure_url"
           content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ"
