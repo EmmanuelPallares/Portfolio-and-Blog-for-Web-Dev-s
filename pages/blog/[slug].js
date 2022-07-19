@@ -42,18 +42,19 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
     <div>
       <Head>
         <title>{blogItem.seo.title}</title>
+        <meta property="fb:app_id" content="107357685387350" />
         <meta property="og:title" content={blogItem.seo.title} />
         <meta property="og:description" content={blogItem.seo.description} />
         <meta property="og:url" content={blogItem.seo.url} />
         <meta property="og:type" content="article" />
         <meta
           property="og:image"
-          content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ.png"
+          content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ"
         />
         <meta property="og:image:alt" content={blogItem.seo.image.alt} />
         <meta
           property="og:image:secure_url"
-          content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ.png"
+          content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ"
         />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
