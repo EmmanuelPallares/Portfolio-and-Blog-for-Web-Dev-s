@@ -52,10 +52,10 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
           content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ"
         />
         <meta property="og:image:alt" content={blogItem.seo.image.alt} />
-        <meta
+        {/* <meta
           property="og:image:secure_url"
           content="https://media.graphassets.com/4qFQw9uROW0xJ3eCS7GQ"
-        />
+        /> */}
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
       </Head>
