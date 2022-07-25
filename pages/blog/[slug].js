@@ -6,7 +6,6 @@ import Image from "next/image";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-jsx";
-
 import Link from "next/link";
 import Head from "next/head";
 export const getStaticPaths = async () => {
@@ -154,12 +153,13 @@ const Home = ({ blogItem, VITOZAUTHOR }) => {
                   data-wow-delay=".1s"
                 >
                   <div className="flex items-center mb-4">
-                    {/* <Image
+                    <Image
                       src={VITOZAUTHOR.userImage.url}
-                      width={VITOZAUTHOR.userImage.width}
-                      height={VITOZAUTHOR.userImage.height}
-                      layout="fill"
-                    /> */}
+                      alt="In mexico city travel for truht"
+                      width={64}
+                      height={64}
+                      className="rounded-full mx-1"
+                    />
                     <div className="pl-4">
                       <strong className="mt-6 mb-1 text-md">
                         {VITOZAUTHOR.name}

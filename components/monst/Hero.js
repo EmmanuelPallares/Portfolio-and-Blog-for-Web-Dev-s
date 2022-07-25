@@ -15,7 +15,7 @@ const Hero = () => {
           className="h-64 lg:h-80 jump"
           src="https://media.graphassets.com/OnMhFL3wQ4eJZfb4GxgJ"
           alt="Monst"
-          layout='fill'
+          layout="fill"
         />
       </div>
       <div className="hidden md:block absolute top-0 right-0 mt-32">
@@ -23,7 +23,7 @@ const Hero = () => {
           className="h-64 lg:h-80 jump"
           src="https://media.graphassets.com/gls4d8xjQRC7FWMPQ2I1"
           alt="Monst"
-          layout='fill'
+          layout="fill"
         />
       </div>
       <div className="container">
@@ -38,27 +38,27 @@ const Hero = () => {
             <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
               {`I'm `}
               <strong className="text-[#E93D44]">{`developer `}</strong>
-              <TextEffect
+               <TextEffect
                 speed={1000}
                 text1={`, a freelancer with a passion for building web applications. `}
                 className="text-[#4e5154]"
-              />
+              /> 
               <br />
             </p>
           </div>
           <div>
             <a
               className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-[#111823]  rounded wow animate__animated animate__fadeIn"
-              href="#key-features"
+              href="/webdevelopment"
             >
-              {`Exclusive Features`}
+              {`WebDevelopment`}
             </a>
             <a
               className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white rounded wow animate__animated animate__fadeIn"
               data-wow-delay=".3s"
-              href="#how-we-work"
+              href="/blog"
             >
-              How We Work?
+              Blog
             </a>
           </div>
         </div>
