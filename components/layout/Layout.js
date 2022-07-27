@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <script
           integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
           crossOrigin="anonymous"
-          referrerpolicy="no-referrer"
+          referrerPolicy="no-referrer"
         ></script>
 
         <script>new WOW().init();</script>

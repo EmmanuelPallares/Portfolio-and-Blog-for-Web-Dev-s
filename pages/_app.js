@@ -1,10 +1,9 @@
 import React from "react";
 import "../styles/prism.css";
-import "../public/assets/css/tailwind-built.css";
-import "../styles/globals.css";
 import "../public/assets/css/animate.min.css";
 import "swiper/css";
 import "animate.css";
+import "../styles/main.css"
 import Layout from "./../components/layout/Layout";
 import Script from "next/script";
 import Head from "next/head";

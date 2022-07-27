@@ -32,7 +32,6 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const Home = ({ blogItem, VITOZAUTHOR }) => {
-  console.log(blogItem);
 
   useEffect(() => {
     Prism.highlightAll();

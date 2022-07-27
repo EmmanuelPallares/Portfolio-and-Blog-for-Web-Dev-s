@@ -18,7 +18,7 @@ const Header = ({ handleHidden }) => {
   });
   return (
     <>
-      <TopBanner />
+      {/* <TopBanner /> */}
       <header
         className={
           scroll

@@ -3,9 +3,9 @@ module.exports = {
   corePlugins: {
     preflight: false,
    },
-  content: [],
+  
   presets: [],
-  darkMode: 'media', // or 'class'
+  
   theme: {
     screens: {
       sm: '640px',
@@ -234,11 +234,11 @@ module.exports = {
       200: '2',
     },
     container: {},
+    purge:{
     content: [
-      './components/**/*.{html,js}',
-      './pages/**/*.{html,js}',
-      './index.html',
-    ],
+      // ...
+      './src/**/*.{js,jsx}',
+    ]},
     cursor: {
       auto: 'auto',
       default: 'default',

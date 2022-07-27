@@ -10,6 +10,8 @@ module.exports = {
   cleanDistDir: false,
   images: {
     disableStaticImages: true,
+    dangerouslyAllowSvg: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   images: {
     domains: [
