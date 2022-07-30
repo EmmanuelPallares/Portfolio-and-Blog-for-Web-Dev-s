@@ -62,8 +62,8 @@ const WhyUs = () => {
                     className="w-6 h-6"
                     stroke="currentColor"
                     src={Modernandresponsive}
-                    width={255}
-                    height={255}
+                    width={32}
+                    height={32}
                   />
                 </div>
                 <div>
@@ -85,8 +85,8 @@ const WhyUs = () => {
                     className="w-6 h-6"
                     stroke="currentColor"
                     src={Researchanddevelopment}
-                    width={255}
-                    height={255}
+                    width={32}
+                    height={32}
                   />
                 </div>
                 <div>

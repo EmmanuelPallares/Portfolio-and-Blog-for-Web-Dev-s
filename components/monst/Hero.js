@@ -1,6 +1,7 @@
 import TextEffect from "../../components/elements/TextEffect";
 import Image from "next/image";
-
+import htmlcssjs from "../../assets/htmlcssjs.svg";
+import cluster from "../../assets/cluster.svg";
 const Hero = () => {
   return (
     <section
@@ -11,19 +12,21 @@ const Hero = () => {
       }}
     >
       <div className="hidden md:block absolute top-0 left-0 mt-32">
-        <Image
+      <Image
           className="h-64 lg:h-80 jump"
-          src="https://media.graphassets.com/OnMhFL3wQ4eJZfb4GxgJ"
+          src={htmlcssjs}
           alt="Monst"
-          layout='fill'
+          width={400}
+          height={300}
         />
       </div>
       <div className="hidden md:block absolute top-0 right-0 mt-32">
         <Image
           className="h-64 lg:h-80 jump"
-          src="https://media.graphassets.com/gls4d8xjQRC7FWMPQ2I1"
+          src={cluster}
           alt="Monst"
-          layout='fill'
+          width={400}
+          height={300}
         />
       </div>
       <div className="container">

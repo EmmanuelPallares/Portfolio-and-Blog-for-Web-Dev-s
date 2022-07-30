@@ -22,8 +22,8 @@ const TopBanner = () => {
             </div>
 
             <div className="sm:order-3 sm:ml-3 inline">
-              <a href="https://github.com/EmmanuelPallares" >
-                <Image src={github} width="90" height="40" className="text-white" alt="GITHUB LOGO" />
+              <a href="https://github.com/EmmanuelPallares" rel="sponsored" >
+                <Image src={github} width="90" height="40" className="text-white" alt="GITHUB LOGO" stroke="currentColor"/>
                 <p className="font-medium text-justify text-white ">
                   Source Code
                 </p>
